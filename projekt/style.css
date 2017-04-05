@@ -1,0 +1,11 @@
+body{
+    background-color: #34495e;
+    font-family: 'Space Mono', monospace;
+}
+h1
+{
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-shadow: #666666;
+}
