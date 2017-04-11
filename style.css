@@ -1,5 +1,6 @@
 .main{
     background-image:url(images/cover3.jpg);
+    background-attachment: fixed;
     height:100vh;
     background-size:cover;
     background-position:center;
@@ -19,6 +20,7 @@ img{
 .logo{
     display:flex;
 justify-content: center;}
+
 .second_background{
     background-image:url(images/cover2.jpg);
     height:100vh;
@@ -260,4 +262,53 @@ header {
 }
 .scrollup:hover{
     opacity:1;
+}
+/* Funkcje */
+.section1 {
+background-image: url('images/congruent_outline.png');
+    background-attachment: fixed;
+}
+.section1 .container {
+    padding: 50px 0px 0px 50px;
+
+
+}
+
+img.function1 {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-top: 1%;
+    border-radius: 1em;
+    transition: transform 2s ease-in;
+
+}
+img.function1:hover {
+    transform: scale(1.1);
+}
+
+.section1 h1 {
+    font-family: Dosis;
+    color: #FFFFFF;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 3rem;
+    padding-top: 1%;
+
+}
+
+.container p {
+    font-size: 1.5rem;
+    float: right;
+    text-overflow: clip;
+    text-align: left;
+    width: 50%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+
+}
+
+article {
+    display: flex;
+    justify-content: center;
 }
