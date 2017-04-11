@@ -261,3 +261,84 @@ header {
 .scrollup:hover{
     opacity:1;
 }
+/*footer karolina*/
+footer{
+    color: #fff;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact {
+    color: #fff;
+    width: 25%;
+    text-align: center;
+    padding: 30px;
+    border-left: 1px dotted #fff;
+    font-size: 14px;
+}
+.contact:first-child{
+    border:none;
+}
+h5{
+    text-align: center;
+}
+ol{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ol li a{
+    color:#fff;
+    display: block;
+    text-align:center;
+    text-decoration: none;
+}
+.copy{
+    width: 100%;
+    border-top: 1px solid #fff;
+    font-size:12px;
+    text-align:center;
+    padding: 30px;
+}
+
+.contact a:hover{
+    cursor:pointer;
+}
+
+.contactdiv
+{
+
+    width: 100%;
+    font-size:0.5em;
+    background-color: #000;
+    line-height: 40px;
+}
+
+.contacttext{
+    width:40%;
+    margin:0 auto;
+    padding: 20px;
+}
+.contactbluebuttom{
+    width:40%;
+    margin:0 auto;
+}
+.bluebutton
+{
+    background-color: #2ecc71;
+    padding: 15px;
+    color: #efefef;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+.bluebutton:hover
+{
+    background-color: #196499;
+}
+
