@@ -127,7 +127,7 @@ input[type="text"]{
 }
 
 .flex-item img{
-    width: 100px;
+    width: 70%;
     height: auto;
     padding: 50px 100px 50px 100px;
     transition: transform 2s ease-in;
@@ -273,16 +273,46 @@ header {
 .scrollup:hover{
     opacity:1;
 }
+
+/* style co ukrytych divów */
+
+#container0, #container1, #container2, #container3 {
+    display:none;
+    justify-content: center;
+    flex-direction: column;
+}
+.functions{
+    height:70%;
+    background-size:cover;
+    background-position:center;
+}
+
+#linkDiv a{
+    text-decoration: none;
+    font-size: 2em;
+    align-items: flex-start;
+    color:white;
+    margin-left:10px ;
+    margin-right: 10px;
+}
+#linkDiv{
+    background-color: #333;
+    height: 10%;
+}
+.opis{
+    color:black;
+    text-align: center;
+    font-size: 4em;
+    padding:20px;
+    background-color: blue;
+}
+
 /* Funkcje */
-.section1 {
-background-image: url('images/congruent_outline.png');
-    background-attachment: fixed;
+#container, #container0, #container1, #container2, #container3{
+    background-image: url('images/congruent_outline.png');
+    background-attachment:fixed;
 }
-.section1 .container {
-    padding: 50px 0px 0px 50px;
 
-
-}
 
 img.function1 {
     width: 30%;
@@ -293,11 +323,12 @@ img.function1 {
     transition: transform 2s ease-in;
 
 }
-img.function1:hover {
+img.function1:hover{
     transform: scale(1.1);
 }
 
-.section1 h1 {
+
+#container h1, #container0 h1, #container1 h1, #container2 h1, #container3 h1{
     font-family: Dosis;
     color: #FFFFFF;
     width: 50%;
@@ -307,7 +338,7 @@ img.function1:hover {
 
 }
 
-.container p {
+article p {
     font-size: 1.5rem;
     float: right;
     text-overflow: clip;
@@ -315,7 +346,6 @@ img.function1:hover {
     width: 50%;
     margin-right: 5%;
     margin-top: 2.5%;
-
 }
 
 article {
@@ -323,6 +353,11 @@ article {
     justify-content: center;
 }
 
+.flex-container{
+    height:60%;
+    background-size:cover;
+    background-position:center;
+}
 
 
 /*third background karolina*/
@@ -641,4 +676,32 @@ ol li a{
         -webkit-transform: translateX(-6px) rotate(-1.2deg);
         transform: translateX(-6px) rotate(-1.2deg);
     }
+}
+
+/* functions menu */
+
+.functions ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display:flex;
+    justify-content: space-around;
+}
+
+.functions li {
+    float: left;
+}
+
+.functions li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.functions li a:hover {
+    background-color: #2ecc71;
 }

@@ -15,6 +15,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To buy | Strona Główna</title>
     <meta charset="UTF-8">
+
+    <!-- skrypt do zmiany contentu w divie -->
+
+    <script type="text/javascript">
+        // From: http://www.webdeveloper.com/forum/showthread.php?266743-Switch-Div-Content-Using-Javascript&p=1229155#post1229155
+
+        function showDiv(idInfo) {
+            var sel = document.getElementById('divLinks').getElementsByTagName('div');
+            for (var i=0; i<sel.length; i++) {
+                sel[i].style.display = 'none';
+            }
+            document.getElementById('container'+idInfo).style.display = 'flex';
+        }
+    </script>
+
 </head>
 <body>
 <a href="#" title="up" class="scrollup"><img src="images/up-chevron-button.png" alt="upup" width="60" height="60"/></a>
@@ -60,52 +75,82 @@
         </div>
     </div>
 </div>
-<!--
-<section class="section1">
-    <h1>Porównaj ceny</h1>
-    <div class="container">
-        <article>
-            <img class="function1" src="images/function_lesser.jpg" alt="Porównaj ceny">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </article>
+
+<!-- links to function nav -->
+
+<div class="functions">
+    <div id="linkDiv">
+        <ul>
+            <li><a href="#" onclick="showDiv('0');return false">Funkcja 1</a></li>
+            <li><a href="#" onclick="showDiv('1');return false">Funkcja 2</a></li>
+            <li><a href="#" onclick="showDiv('2');return false">Funkcja 3</a></li>
+            <li><a href="#" onclick="showDiv('3');return false">Funkcja 4</a></li>
+        </ul>
     </div>
 
-</section> -->
-<!--
-<section class="section1">
-    <h1>Znajdź najlepszą okazję</h1>
-    <div class="container">
-        <article>
-            <img class="function1" src="images/function2lesser.jpg" alt="Znajdź najlepszą okazję">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </article>
+
+    <!-- 4 containers -->
+
+
+    <div id="divLinks">
+
+        <div id="container">
+            <section class="section1">
+                <h1>Porównaj ceny</h1>
+                <article>
+                    <img class="function1" src="images/function_lesser.jpg" alt="Porównaj ceny">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </article>
+            </section>
+        </div>
+
+        <div id="container0">
+            <section class="section1">
+                <h1>Porównaj ceny</h1>
+                <article>
+                    <img class="function1" src="images/function_lesser.jpg" alt="Porównaj ceny">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </article>
+            </section>
+        </div>
+
+
+
+        <div id="container1">
+            <section class="section1">
+                <h1>Znajdź najlepszą okazję</h1>
+                <article>
+                    <img class="function1" src="images/function2lesser.jpg" alt="Znajdź najlepszą okazję">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </article>
+            </section>
+        </div>
+
+
+
+        <div id="container2">
+            <section class="section1">
+                <h1>Znajdź najlepszą alternatywę</h1>
+                <article>
+                    <img class="function1" src="images/function3lesser.jpg" alt="Znajdź najlepszą alternatywę">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </article>
+            </section>
+        </div>
+
+
+
+        <div id="container3">
+            <section class="section1">
+                <h1>Znajdź produkt w sklepie</h1>
+                <article>
+                    <img class="function1" src="images/function4lesser.jpg" alt="Znajdź produkt w sklepie">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </article>
+            </section>
+        </div>
     </div>
-
-</section>
--->
-<!--
-<section class="section1">
-    <h1>Znajdź najlepszą alternatywę</h1>
-    <div class="container">
-        <article>
-            <img class="function1" src="images/function3lesser.jpg" alt="Znajdź najlepszą alternatywę">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </article>
-    </div>
-
-</section>
--->
-<section class="section1">
-    <h1>Znajdź produkt w sklepie</h1>
-    <div class="container">
-        <article>
-            <img class="function1" src="images/function4lesser.jpg" alt="Znajdź produkt w sklepie">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </article>
-    </div>
-
-</section>
-
+</div>
 
 <div class="second_background">
     <div class="formi">
