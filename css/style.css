@@ -82,9 +82,8 @@
 .caption2 > .carousel-caption {
     font-family: "Lato Heavy";
     font-weight: bold;
-
-
 }
+
 h1.caption2 {
     font-size: 45px;
     letter-spacing: 2px;
@@ -223,4 +222,48 @@ h1.caption2 {
 }
 .scrollup:hover{
     opacity:1;
+}
+
+/**********************************************************
+----------------------ADVANTAGES
+ **********************************************************/
+
+.glyphicon-euro, .glyphicon-ok-sign, .glyphicon-cog {
+    font-size: 7rem;
+    color: #FFFFFF;
+}
+
+section.advantages {
+    background-color: #3498db;
+}
+section.advantages h2 {
+    font-family: Dosis;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.glyphicon-cog {
+    transition: all 3s ease-in;
+}
+.glyphicon-euro {
+    transition: all 1s ease-in;
+}
+.glyphicon-ok-sign {
+    transition: all 1s ease-in;
+}
+.glyphicon-cog:hover {
+    transform: rotate(360deg);
+}
+.glyphicon-euro:hover {
+    transform: rotateY(180deg);
+}
+.glyphicon-ok-sign:hover {
+    color: #adff2f;
+}
+section.advantages > .container-fluid {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.col-sm-6, .col-xs-12 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
