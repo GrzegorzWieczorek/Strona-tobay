@@ -86,6 +86,10 @@ img{
     font-family: Dosis;
     font-size:1.5em;
 }
+.regulamin-none{
+    text-decoration: none;
+    color:white;
+}
 input{
     text-align:center;
 }
