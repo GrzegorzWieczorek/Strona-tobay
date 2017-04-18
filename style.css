@@ -375,25 +375,32 @@ article {
 
 }
 .crew{
-    color: #0a2b42;
+    color: white;
     padding-bottom: 45px;
     border: none;
     font-size: 35px;
+    font-family: Dosis;
 
 }
 .row{
     width:100%;
+    font-family: Dosis;
 }
-.k{
-    color: #0a2b42;
-    padding-bottom: 45px;
+.ka{
+    color: white;
+    padding-bottom: 5px;
     border: none;
+}
+.g{
+    color:white;
+    text-decoration: none;
+    font-family: Dosis;
 }
 *{
     box-sizing: border-box;
 }
 .col-1{
-    width:8,33%;
+    width:8.33%;
 }
 .col-2{
     width:16.66%;
