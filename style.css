@@ -324,11 +324,10 @@ img.function1 {
     height: auto;
     float: left;
     margin-top: 1%;
-}
-
     transition: transform 2s ease-in;
-
+    border-radius: 5%;
 }
+
 img.function1:hover{
     transform: scale(1.1);
 }
