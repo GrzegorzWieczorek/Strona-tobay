@@ -83,8 +83,12 @@ img{
     background-color:hsla(204, 70%, 53%,0.8);
     padding:100px;
     text-align:center;
-    font-family: Laksaman;
+    font-family: Dosis;
     font-size:1.5em;
+}
+.regulamin-none{
+    text-decoration: none;
+    color:white;
 }
 input{
     text-align:center;
@@ -298,6 +302,7 @@ header {
 #linkDiv{
     background-color: #333;
     height: 10%;
+    font-family: Dosis;
 }
 .opis{
     color:black;
@@ -368,7 +373,7 @@ article {
     background: url("images/tlo.png") repeat fixed center;
     margin: 0 auto;
     width: 100%;
-    height:80vh;
+    height: 60vh;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -376,7 +381,6 @@ article {
 }
 .crew{
     color: white;
-    padding-bottom: 45px;
     border: none;
     font-size: 35px;
     font-family: Dosis;
@@ -386,7 +390,7 @@ article {
     width:100%;
     font-family: Dosis;
 }
-.ka{
+.k{
     color: white;
     padding-bottom: 5px;
     border: none;
@@ -509,10 +513,16 @@ ol li a{
 }
 
 .contacttext{
+    color:white;
+    font-family: Dosis;
     width:40%;
     margin:0 auto;
     padding: 20px;
     line-height: 30px;
+}
+
+.contacttext h1{
+    font-size: 2rem;
 }
 
 /* animacja dla Napisz do nasz karolina*/
