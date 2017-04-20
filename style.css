@@ -293,6 +293,7 @@ header {
     bottom:15px;
     right:20px;
     opacity:0.8;
+    display: none;
 
 }
 .scrollup:hover{

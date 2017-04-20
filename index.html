@@ -36,6 +36,38 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
      <!--change name, add file -->
+
+    <!-----------------------scrollup----------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+
+
+    <script>
+
+        jQuery(function($)
+            {
+
+                // Grzegorz zresetuj scrolla
+
+                $.scrollTo(0);
+                $('.scrollup').click(function() { $.scrollTo($('body'), 8000); });
+
+            }
+        );
+
+
+        // Grzegorz pokaż podczas przewijania
+
+        $(window).scroll(function()
+            {
+                if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                else $('.scrollup').fadeOut();
+            }
+        );
+
+
+    </script>
+
 </head>
 <body>
 <!-------------------------------------------------------------------------------------------------
