@@ -272,9 +272,13 @@ section.advantages > .container-fluid {
  **********************************************************/
 
 footer{
-    background-color:black;
+    background: url("../images/1.jpg")no-repeat fixed center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
     color:white;
     font-family: Dosis;
+    font-size:1.75rem;
 }
 
 .contact {
