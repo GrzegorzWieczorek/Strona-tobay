@@ -267,6 +267,26 @@ section.advantages > .container-fluid {
     margin-bottom: 5px;
 }
 
+
+/**********************************************************
+----------------------O NAS (Karolina)
+ **********************************************************/
+
+
+.page-header {
+    background: url("../images/1.jpg") no-repeat fixed center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    font-family: Dosis;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+
+
+
 /**********************************************************
 ----------------------FOOTER (Karolina)
  **********************************************************/
