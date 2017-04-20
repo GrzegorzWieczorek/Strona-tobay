@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e97fa95b-704f-4c04-ba63-ffcfc0f2b1a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jquery.scrollTo.min.js" afterPath="$PROJECT_DIR$/jquery.scrollTo.min.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -303,11 +301,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492695959653</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Bootstrap version finally combined - Piotr 19.04">
+      <created>1492699951735</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1492699951735</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65593000" />
+    <option name="totallyTimeSpent" value="65612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1600" height="904" extended-state="6" />
