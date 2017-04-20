@@ -140,7 +140,10 @@ h1.caption2 {
     background-color: #ffd700;
     border: 3px solid #FFFFFF;
 }
-
+.btn-primary:focus {
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+}
 /* selected link */
 .btn-primary:active {
     background-color: red;
