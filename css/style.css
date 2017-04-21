@@ -169,6 +169,7 @@ h1.caption2 {
     left: -65px;
     top: 25%;
     transition: 0.5s ease-in-out;
+    z-index: 100;
 }
 .facebook{
     width:75px;
@@ -287,9 +288,20 @@ section.advantages > .container-fluid {
     text-align: center;
 }
 
+.caption{
+    text-align: center;
+}
+.caption a:hover{
+    text-decoration: none;
+}
 
-
-
+.page-header h1{
+margin: 1%;
+}
+.img-team{
+    max-height: 300px;
+    margin: 0 auto;
+}
 /**********************************************************
 ----------------------FOOTER (Karolina)
  **********************************************************/
@@ -299,23 +311,19 @@ footer{
     background-size: cover;
     margin: 0 auto;
     width: 100%;
+    height:auto;
     color:white;
     font-family: Dosis;
-    font-size:1.75rem;
+    font-size: 1.7rem;
 }
 
 .contact {
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-size: 1em;
     padding:5%;
 }
 
-@media screen and (min-width: 1200px){
-    .dott{
-        border-right:1px dotted white;
-    }
-}
 .regulations{
     margin: 0;
     padding: 0;
@@ -328,7 +336,6 @@ footer{
 }
 .copy{
     width: 100%;
-    border-top: 1px solid #fff;
     font-size:0.9em;
     text-align:center;
     padding:1%;
@@ -336,19 +343,22 @@ footer{
 .regulations a:hover{
     cursor:pointer;
     text-decoration: none;
+    color:#2C7084;
 }
 .contactdiv{
     font-size:1.2em;
-    text-align: center
+    text-align: center;
+
 }
+
+
+
 .contactdiv h2{
     font-size:1.4em;
 }
 /* animacja  Vibrate-1 karolina*/
 .vibrate-1 {
-    -webkit-animation: vibrate-1 0.3s linear infinite both;
-    -moz-animation: vibrate-1 0.3s linear infinite both;
-    animation: vibrate-1 0.3s linear infinite both;
+
     padding:2%;
 
 }
@@ -415,36 +425,48 @@ footer{
     }
 }
 
-footer .btn-lg, .btn-group-lg > .btn {
-    padding: 10px 16px;
-    font-size: 18px;
+.button_footer{
+    padding: 2%;
+    font-size: 1,3rem;
     line-height: 1.3333333;
     border-radius: 7px;
     margin-top: 1%;
     margin-right: 0%;
 
 }
+.button_footer:hover{
+    background-color: #0DCBB2;
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    -moz-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+}
+
+
+
+
+
+
 /* Cookie warning */
 #cookie-warn{
     position: fixed;
     bottom: 0;
-    background: #EEE;
+    background: #abffe4;
     margin: 0;
     padding: 15px;
     width: 100%;
     display: none;
     z-index: 99;
+    opacity: 0.7;
 }
 
 #cookie-warn a{
-    color: #D66E1A;
+    color: #ff4f00;
     text-transform: uppercase;
     float: right;
     padding-right: 20px;
 }
 
 #cookie-warn p{
-    font-size: 12px;
-    color: #333;
+    font-size: 1.2rem;
+    color: #000;
 }
-
