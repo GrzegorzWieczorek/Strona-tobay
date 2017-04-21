@@ -269,7 +269,44 @@ section.advantages > .container-fluid {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+/**********************************************************
+----------------------FEATURES
+ **********************************************************/
+section.functions {
+    background-image: url("../images/congruent_outline.png");
+    background-attachment: fixed;
+}
+section.functions img {
+    max-width: 70%;
+    height: auto;
+    text-align: center;
+    border-radius: 5%;
+    margin-bottom: 20px;
 
+}
+
+section.functions .nav-tabs {
+    border-bottom: 1px solid #ddd;
+    font-family: Dosis;
+    font-size: 1.7rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-tabs > li > a {
+    color: #ffffff;
+}
+.nav-tabs > li > a:hover {
+    color: #555;
+}
+
+section.functions h2, p {
+    color: white;
+    font-family:Dosis;
+}
+section.functions p {
+    font-size: 2rem;
+
+}
 /**********************************************************
 ----------------------FOOTER (Karolina)
  **********************************************************/
