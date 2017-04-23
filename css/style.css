@@ -126,13 +126,14 @@ h1.caption2 {
 
 /* unvisited link */
 .btn-primary:link {
-    background-color: red;
+    background-color: transparent;
     border: 3px solid #FFFFFF;
+    color: #FFFFFF;
 }
 
 /* visited link */
 .btn-primary:visited {
-    color: green;
+    color: #FFFFFF;
 }
 
 /* mouse over link */
@@ -146,14 +147,18 @@ h1.caption2 {
 }
 /* selected link */
 .btn-primary:active {
-    background-color: red;
+    background-color: transparent;
     border: 3px solid #FFFFFF;
+    color: #FFFFFF;
 }
 .btn-primary .active {
     background-color: transparent;
     border: 3px solid #FFFFFF;
 
-
+}
+.btn:focus {
+background-color: transparent;
+border: 3px solid #FFFFFF;
 }
 
     /**********************************************************
@@ -239,6 +244,7 @@ h1.caption2 {
 section.advantages {
     background-color: #3498db;
 }
+
 section.advantages h2 {
     font-family: Dosis;
     font-weight: 700;
@@ -270,6 +276,50 @@ section.advantages > .container-fluid {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+/**********************************************************
+----------------------FEATURES
+ **********************************************************/
+
+
+
+section.functions-intro {
+    background-image: url("../images/cover6.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.functions-intro {
+    height: 300px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.functions-intro h1 {
+    text-align: center;
+    color: white;
+    font-family:Dosis;
+    margin-bottom: 30px;
+
+
+}
+.functions-intro p {
+    text-align: center;
+    font-family:Dosis;
+    font-size: 1.8rem;
+    line-height: 35px;
+
+}
+
+section.functions-intro .container-fluid {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
 /**********************************************************
 ----------------------FEATURES
  **********************************************************/
@@ -308,7 +358,10 @@ section.functions p {
     font-size: 2rem;
 
 }
-
+section.advantages > .container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 /**********************************************************
 ----------------------O NAS (Karolina)
@@ -465,7 +518,7 @@ footer{
 
 .button_footer{
     padding: 2%;
-    font-size: 1,3rem;
+    font-size: 1.3rem;
     line-height: 1.3333333;
     border-radius: 7px;
     margin-top: 1%;
