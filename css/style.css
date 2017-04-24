@@ -110,12 +110,13 @@ h1.caption2 {
 ---------------------------BUTTON
  **********************************************************/
 .btn-lg, .btn-group-lg > .btn {
-    padding: 10px 16px;
-    font-size: 18px;
+    padding: 2%;
+    font-size: 1.7rem;
     line-height: 1.3333333;
     border-radius: 7px;
     margin-top: 1%;
     margin-right: 17%;
+    font-weight: 800;
 }
 
 .btn-primary {
@@ -308,8 +309,8 @@ section.functions-intro {
 .functions-intro p {
     text-align: center;
     font-family:Dosis;
-    font-size: 1.8rem;
-    line-height: 35px;
+    font-size: 2.5rem;
+    line-height: 50px;
 
 }
 
@@ -318,6 +319,10 @@ section.functions-intro .container-fluid {
     padding-bottom: 90px;
     background-color: rgba(0, 0, 0, 0.5);
 
+}
+
+.row-color {
+    background-color: #2e6da4;
 }
 
 /**********************************************************
@@ -335,6 +340,7 @@ section.functions img {
     height: auto;
     text-align: center;
     border-radius: 5%;
+    margin-top: 20px;
     margin-bottom: 20px;
 
 }
@@ -364,6 +370,12 @@ section.functions p {
 section.advantages > .container-fluid {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+
+#premiere .functions-intro {
+    width: auto;
+    height: 400px;
 }
 
 /**********************************************************
