@@ -380,22 +380,45 @@ section.advantages > .container-fluid {
     font-family: Dosis;
     font-size: 1.75rem;
     text-align: center;
+    border: none;
+
 }
 
 .caption{
     text-align: center;
+    background-color: #333754;
+    opacity: 0.8;
 }
 .caption a:hover{
     text-decoration: none;
 }
 
+.caption a{
+    text-decoration: none;
+    color:#999999;
+}
+
 .page-header h1{
-margin: 1%;
+    padding: 3%;
+    margin: 0 auto;
+
 }
 .img-team{
     max-height: 300px;
     margin: 0 auto;
+    margin-bottom:5%;
+    margin-top: 5%;
+
 }
+/****************************************** Animate foto ***************************************/
+
+.hided{
+    opacity:0
+}
+.show {
+    opacity: 1;
+}
+
 /**********************************************************
 ----------------------FOOTER (Karolina)
  **********************************************************/
@@ -453,6 +476,11 @@ footer{
     background-color: #2475AC ;
     margin:0 auto;
     text-align: center;
+    border: none;
+}
+
+
+.container {
     border: none;
 }
 
@@ -538,7 +566,7 @@ footer{
 
 }
 .button_footer:hover{
-    background-color: #0DCBB2;
+    background-color: #00ECC9;
     -webkit-animation: vibrate-1 0.3s linear infinite both;
     -moz-animation: vibrate-1 0.3s linear infinite both;
     animation: vibrate-1 0.3s linear infinite both;
@@ -564,7 +592,7 @@ footer{
 }
 
 #cookie-warn a{
-    color: #ff4f00;
+    color: #DDBE08;
     text-transform: uppercase;
     float: right;
     padding-right: 20px;
