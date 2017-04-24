@@ -242,7 +242,7 @@ border: 3px solid #FFFFFF;
 }
 
 section.advantages {
-    background-color: #3498db;
+    background-color: #2475AC;
 }
 
 section.advantages h2 {
@@ -278,13 +278,13 @@ section.advantages > .container-fluid {
 }
 
 /**********************************************************
-----------------------FEATURES
+----------------------FEATURES INTRO
  **********************************************************/
 
 
 
 section.functions-intro {
-    background-image: url("../images/cover6.jpg");
+    background-image: url("../images/cover7.jpg");
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -324,8 +324,11 @@ section.functions-intro .container-fluid {
 ----------------------FEATURES
  **********************************************************/
 section.functions {
-    background-image: url("../images/congruent_outline.png");
+    background-image: url("../images/functions_cover2.jpg");
     background-attachment: fixed;
+}
+.black_background {
+    background-color: rgba(36, 117, 172, 0.5);
 }
 section.functions img {
     max-width: 70%;
