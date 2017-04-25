@@ -4,9 +4,6 @@
     <list default="true" id="93b61267-bc82-456a-a30a-80378abd2204" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jfddl1-share2travel" afterPath="$PROJECT_DIR$/jfddl1-share2travel" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins.js" afterPath="$PROJECT_DIR$/plugins.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -488,11 +485,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492977205013</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Active menu added - Piotr 25.04">
+      <created>1493145392924</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1493145392924</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81465000" />
+    <option name="totallyTimeSpent" value="82114000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,7 +548,8 @@
     <MESSAGE value="RWD" />
     <MESSAGE value="Bootstrap version finally combined - Piotr 19.04" />
     <MESSAGE value="New section + menu/button fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="New section + menu/button fixed" />
+    <MESSAGE value="Active menu added - Piotr 25.04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Active menu added - Piotr 25.04" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
