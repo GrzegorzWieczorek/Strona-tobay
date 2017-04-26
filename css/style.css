@@ -1,0 +1,663 @@
+body {
+    position: relative;
+}
+.big-background {
+    background-image: url(../images/bigcover.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/**********************************************************
+----------------------NAVIGATION
+ **********************************************************/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffd700 !important;
+    border-bottom: 1px #FFFFFF solid !important;
+    background-color: transparent;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: rgba(0, 0, 0, 1) !important;
+    transition: background-color 1.3s ease-in;
+}
+
+.navbar-brand img {
+    max-width: auto;
+    height: 100%;
+}
+.navbar-brand {
+    padding: 5px 5px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-default {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+.navbar li {
+    font-family: Dosis;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+    border: 1px solid transparent;
+}
+.navbar-default .navbar-nav > li > a:link {
+    color: #ffd700;
+    border-bottom: 1px transparent solid;
+}
+/* visited link */
+.navbar-default .navbar-nav > li > a:visited {
+    color: #FFFFFF;
+    border-bottom: 1px transparent solid;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ffd700;
+    border-bottom: 1px #FFFFFF solid;
+}
+.navbar-default .navbar-nav > li > a:active {
+    color: #FFFFFF;
+    border-bottom: 1px #FFFFFF solid;
+}
+
+/**********************************************************
+--------------------------SLIDE SHOW
+     **********************************************************/
+.carousel-inner {
+    width: 100%;
+    max-height: 950px !important;
+}
+.right carousel-control {
+    z-index: 2;
+}
+
+@media screen and (min-width: 1495px) { /* upgrade media queries */
+    .carousel-caption {
+        right: 25%;
+        left: 25%;
+        padding-bottom: 25%;
+    }
+}
+@media screen and (max-width: 668px) { /* upgrade media queries */
+    .carousel-caption {
+        right: 25%;
+        left: 25%;
+        padding-bottom: 5%;
+
+    }
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 35px;
+}
+.caption2 > .carousel-caption {
+    font-family: "Lato Heavy";
+    font-weight: bold;
+}
+
+h1.caption2 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-right: 50px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) { /* upgrade media queries */
+    h1.caption2 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 568px) { /* upgrade media queries */
+    h1.caption2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-right: 5px;
+    }
+}
+/**********************************************************
+---------------------------BUTTON
+ **********************************************************/
+.btn-lg, .btn-group-lg > .btn {
+    padding: 2%;
+    font-size: 1.7rem;
+    line-height: 1.3333333;
+    border-radius: 7px;
+    margin-top: 1%;
+    margin-right: 17%;
+    font-weight: 800;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+
+}
+
+/* unvisited link */
+.btn-primary:link {
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+/* visited link */
+.btn-primary:visited {
+    color: #FFFFFF;
+}
+
+/* mouse over link */
+.btn-primary:hover {
+    background-color: #ffd700;
+    border: 3px solid #FFFFFF;
+}
+.btn-primary:focus {
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+}
+/* selected link */
+.btn-primary:active {
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.btn-primary .active {
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+
+}
+.btn:focus {
+background-color: transparent;
+border: 3px solid #FFFFFF;
+}
+
+    /**********************************************************
+---------------------------SOCIAL MEDIA
+     **********************************************************/
+
+.social-media{
+    color:white;
+    font-size:38px;
+    line-height: 60px;
+    text-align:center;
+    position: fixed;
+    left: -65px;
+    top: 25%;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
+}
+.facebook{
+    width:75px;
+    height: 60px;
+    background-color: #3D5B99;
+}
+.tweeter{
+    width:75px;
+    height: 60px;
+    background-color: #1da1f2;
+}
+.yt{
+    width:75px;
+    height: 60px;
+    background-color:#E62117;
+}
+.gplus{
+    width:75px;
+    height: 60px;
+    background-color:#DB4437;
+}
+.facebook:hover{
+    background-color: #2c4c88;
+}
+.tweeter:hover{
+    background-color: #0e90e1;
+}
+.yt:hover{
+    background-color: #d51006;
+}
+.gplus:hover{
+    background-color: #ea3326;
+}
+.social-media:hover{
+    left:0;
+    cursor:pointer;
+}
+.advantages{
+    background-color:#3498db;
+}
+
+/**********************************************************
+----------------------SCROLL UP
+ **********************************************************/
+
+.scrollup {
+    position:fixed;
+    bottom:15px;
+    right:20px;
+    opacity:0.8;
+    z-index: 1;
+
+}
+.scrollup:hover{
+    opacity:1;
+}
+
+/**********************************************************
+----------------------ADVANTAGES
+ **********************************************************/
+
+.glyphicon-euro, .glyphicon-ok-sign, .glyphicon-cog {
+    font-size: 7rem;
+    color: #FFFFFF;
+}
+
+section.advantages {
+    background-color: #2475AC;
+}
+
+section.advantages h2 {
+    font-family: Dosis;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.glyphicon-cog {
+    transition: all 3s ease-in;
+}
+.glyphicon-euro {
+    transition: all 1s ease-in;
+}
+.glyphicon-ok-sign {
+    transition: all 1s ease-in;
+}
+.glyphicon-cog:hover {
+    transform: rotate(360deg);
+}
+.glyphicon-euro:hover {
+    transform: rotateY(180deg);
+}
+.glyphicon-ok-sign:hover {
+    color: #adff2f;
+}
+section.advantages > .container-fluid {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.col-sm-6, .col-xs-12 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/**********************************************************
+----------------------FEATURES INTRO
+ **********************************************************/
+
+
+
+section.functions-intro {
+    /*background-image: url("../images/cover7.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.functions-intro {
+    height: 50%;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.functions-intro h1 {
+    text-align: center;
+    color: white;
+    font-family:Dosis;
+    margin-bottom: 30px;
+
+
+}
+.functions-intro p {
+    text-align: center;
+    font-family:Dosis;
+    font-size: 2.5rem;
+    line-height: 50px;
+
+}
+
+section.functions-intro .container-fluid {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.row-color {
+    background-color: #2e6da4;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/**********************************************************
+----------------------FUNCTIONS
+ **********************************************************/
+section.functions {
+    /*background-image: url("../images/functions_cover2.jpg");
+    background-attachment: fixed;*/
+}
+.black_background {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+section.functions img {
+    max-width: 70%;
+    height: auto;
+    text-align: center;
+    border-radius: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+section.functions .nav-tabs {
+    border-bottom: 1px solid #ddd;
+    font-family: Dosis;
+    font-size: 1.7rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-tabs > li > a {
+    color: #ffffff;
+}
+.nav-tabs > li > a:hover {
+    color: #555;
+}
+
+section.functions h2, p {
+    color: white;
+    font-family:Dosis;
+}
+section.functions p {
+    font-size: 2rem;
+
+}
+section.advantages > .container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/**********************************************************
+----------------------PREMIERE
+ **********************************************************/
+
+#premiere .functions-intro {
+    background-color: #2475AC;
+    background-image: none;
+    /*background-image: url("../images/cover8.jpg"); */
+    width: auto;
+    height: 50%;
+}
+#premiere .container-fluid {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    background-color: #2475AC;
+}
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/**********************************************************
+----------------------O NAS (Karolina)
+ **********************************************************/
+
+
+.page-header {
+    background: url("../images/1.jpg") no-repeat fixed center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    font-family: Dosis;
+    font-size: 1.75rem;
+    text-align: center;
+    border: none;
+
+}
+
+.caption{
+    text-align: center;
+    background-color: #333754;
+    opacity: 0.8;
+    margin-bottom: 10%;
+}
+.caption a:hover{
+    text-decoration: none;
+}
+
+.caption a{
+    text-decoration: none;
+    color:#999999;
+}
+
+.page-header h1{
+    padding: 3%;
+    margin: 0 auto;
+
+}
+.img-team{
+    height: 20vh;
+    margin: 0 auto;
+    margin-bottom:5%;
+    margin-top: 5%;
+
+}
+/****************************************** Animate foto ***************************************/
+
+.hided{
+    opacity:0
+}
+.show {
+    opacity: 1;
+}
+
+/**********************************************************
+----------------------FOOTER (Karolina)
+ **********************************************************/
+textarea.form-control {
+    height: auto;
+    width: 97%;
+    margin-left: 1.7%; }
+
+
+footer{
+    background: url("../images/1.jpg")no-repeat fixed center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    height:auto;
+    color:white;
+    font-family: Dosis;
+    font-size: 1.7rem;
+}
+
+.contact {
+    color: #fff;
+    text-align: left;
+    font-size: 0.75em;
+    padding:5%;
+}
+.forms{
+    margin-bottom: 5%;
+}
+
+.regulations{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.regulations li a{
+    color:#fff;
+    display: block;
+    text-decoration: none;
+}
+.copy{
+    width: 100%;
+    font-size:0.9em;
+    text-align:center;
+    padding:1%;
+}
+.regulations a:hover{
+    cursor:pointer;
+    text-decoration: none;
+    color:#2C7084;
+}
+.contactdiv{
+    font-size:1.2em;
+    text-align: center;
+
+}
+
+.back-d-form-footer{
+    width: 100%;
+    background-color: #2475AC ;
+    margin:0 auto;
+    text-align: center;
+    border: none;
+}
+
+
+.container {
+    border: none;
+}
+
+.contactdiv h2{
+    font-size:1.4em;
+}
+/* animacja  Vibrate-1 karolina*/
+.vibrate-1 {
+
+    padding:2%;
+
+}
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2017-4-12 8:52:52
+ * http://animista.net
+ * T: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+.button_footer{
+    padding: 2%;
+    font-size: 1.3rem;
+    line-height: 1.3333333;
+    border-radius: 7px;
+    margin-top: 1%;
+    margin-right: 0%;
+
+}
+.button_footer:hover{
+    background-color: #00ECC9;
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    -moz-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+}
+
+
+
+
+
+
+/* Cookie warning */
+#cookie-warn{
+    position: fixed;
+    bottom: 0;
+    background: #000000;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    display: none;
+    z-index: 99;
+    font-size: 2em;
+
+}
+
+#cookie-warn a{
+    color: #DDBE08;
+    text-transform: uppercase;
+    float: right;
+    padding-right: 20px;
+}
+
+#cookie-warn p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
