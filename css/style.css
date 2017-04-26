@@ -437,6 +437,7 @@ section.advantages > .container-fluid {
     text-align: center;
     background-color: #333754;
     opacity: 0.8;
+    margin-bottom: 10%;
 }
 .caption a:hover{
     text-decoration: none;
