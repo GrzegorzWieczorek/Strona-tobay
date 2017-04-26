@@ -25,34 +25,4 @@ $(document).ready(function() {
             $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
     });
-/*
-var menu = $(window);
-var position = menu.scrollTop();
-console.log(position);
 
-/*
-var menu = $('#mainnav');
-var position = menu.offset();
-console.log(position);
-$( '#log' ).text( "left: " + position.left + ", top: " + position.top );
-*/
-
-
-
-
-
-/*
-$( document ).on( "mousemove", function( event ) {
-    if (event.pageY>1595) {
-        $('#mainnav').css("background-color", "rgba(0, 0, 0, 1")
-    } else {
-    } if (event.pageY<1595) {
-        $('#mainnav').css("background-color", "rgba(0, 0, 0, 0.5")
-    } else {
-
-    }
-    $( "#log" ).text( "pageX: " + event.pageX + ", pageY: " + event.pageY );
-}); //1595
-
-
-*/
