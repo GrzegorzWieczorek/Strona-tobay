@@ -1,175 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="css/fontello.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" type="text/css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>To buy | Strona Główna</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-------------------------------------------------------------------------------------------------
+    -----------------------------------------FAVICONS + FONTELLO + CSS
+    --------------------------------------------------------------------------------------------------->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="fontello.css" type="text/css">
+    <link rel="stylesheet" href="fontello_1.css" type="text/css">
+                                      <!--ANIMATE-->
+  <link rel="stylesheet" href="animate.css" type="text/css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="favicons/manifest.json">
     <link rel="shortcut icon" href="favicons/favicon.ico">
     <meta name="msapplication-config" content="favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To buy | Strona Główna</title>
-    <meta charset="UTF-8">
+    <!-------------------------------------------------------------------------------------------------
+        -------------------------------------GOOGLE FONTS
+        --------------------------------------------------------------------------------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+     <!--change name, add file -->
 
-    <!-- skrypt do zmiany contentu w divie -->
+    <!-----------------------scrollup----------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
 
-    <script type="text/javascript">
-        // From: http://www.webdeveloper.com/forum/showthread.php?266743-Switch-Div-Content-Using-Javascript&p=1229155#post1229155
+    <!-------------------------------------------------------------------------------------------------
+            -------------------------------------SCROLLUP
+            --------------------------------------------------------------------------------------------------->
+    <script>
 
-        function showDiv(idInfo) {
-            var sel = document.getElementById('divLinks').getElementsByTagName('div');
-            for (var i=0; i<sel.length; i++) {
-                sel[i].style.display = 'none';
+        jQuery(function($)
+            {
+
+                // Grzegorz zresetuj scrolla
+
+                $.scrollTo(0);
+                $('.scrollup').click(function() { $.scrollTo($('body'), 8000); });
+
             }
-            document.getElementById('container'+idInfo).style.display = 'flex';
-        }
+        );
+
+
+        // Grzegorz pokaż podczas przewijania
+
+        $(window).scroll(function()
+            {
+                if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                else $('.scrollup').fadeOut();
+            }
+        );
+
+
     </script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#mainnav" data-offset="5">
+<!-------------------------------------------------------------------------------------------------
+        -------------------------------------SCROLLUP (add responsive ver)
+        --------------------------------------------------------------------------------------------------->
 <a href="#" title="up" class="scrollup"><img src="images/up-chevron-button.png" alt="upup" width="60" height="60"/></a>
 <header>
+    <!-------------------------------------------------------------------------------------------------
+        -------------------------------------SLIDESHOW (make somehow attachment fixed effect)
+        --------------------------------------------------------------------------------------------------->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 
-    <nav class="topnav">
+        </ol>
 
-        <ul class="menu">
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">Funkcje</a></li>
-            <li><a href="#">Zapisz się</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/cover2.jpg" alt="To Buy">
+                <div class="carousel-caption center-block">
+                    <img src="images/brand.png" class="img-responsive" alt="To Buy | Brand">
+                    <a href="#poznajnas" role="button" class="btn btn-primary btn-lg block-center">ZOBACZ</a>
+                </div>
+        </div>
 
-    </nav>
-
-
-
-</header>
-    <div class="main">
-            <div class="countdown">
-                <iframe width="587" height="201" src="https://w2.countingdownto.com/1780604" frameborder="0"></iframe>
+            <div class="item">
+                <img src="images/cover3.jpg" alt="To Buy">
+                <div class="caption2">
+                <div class="carousel-caption">
+                    <h1 class="caption2 center-block">Sprawdź jak zmieniają się ceny</h1>
+                    <a href="#poznajnas" role="button" class="btn btn-primary btn-lg block-center">ZOBACZ</a>
+                </div>
+                </div>
+          </div>
+        <div class="item">
+            <img src="images/cover1.jpg" alt="To Buy">
+            <div class="caption2">
+                <div class="carousel-caption">
+                    <h1 class="caption2 center-block">Znajdź najtańszy produkt</h1>
+                    <a href="#poznajnas" role="button" class="btn btn-primary btn-lg block-center">ZOBACZ</a>
+                </div>
             </div>
-        <div class="logo">
-            <img src="images/brand.png">
+    </div>
+    <div class="item">
+        <img src="images/cover4.jpg" alt="To Buy">
+        <div class="caption2">
+            <div class="carousel-caption">
+                <h1 class="caption2 center-block">Upewnij się czy produkt jest w sklepie</h1>
+                <a href="#poznajnas" role="button" class="btn btn-primary btn-lg block-center">ZOBACZ</a>
+            </div>
         </div>
-        <button class="button"><span>POZNAJ</span></button>
+    </div>
     </div>
 
-<div class="advantages">
-    <div class="flex-container">
-        <div class="flex-item">
-            <img src="icons/price-tag.svg" alt="Darmowy">
-            <p>Darmowy</p>
-        </div>
-        <div class="flex-item">
-            <img src="icons/hourglass.svg" alt="Szybki">
-            <p>Szybki</p>
-        </div>
-        <div class="flex-item">
-            <img src="icons/cloud-computing.svg" alt="Rozbudowany">
-            <p>Wygodny</p>
-        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+    <!-------------------------------------------------------------------------------------------------
+        -------------------------------------NAVIGATION
+        --------------------------------------------------------------------------------------------------->
+    <nav id="mainnav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#carousel-example-generic">
+                    <img alt="To Buy" class="img-responsive icon" src="images/projectavatar.png">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#poznajnas">Aplikacja</a></li>
+                    <li><a href="#premiere">Download</a></li>
+                    <li><a href="#onas">Twórcy</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+<div id="log">
+
 </div>
-
-<!-- links to function nav -->
-
-<div class="functions">
-    <div id="linkDiv">
-        <ul>
-            <li><a href="#" onclick="showDiv('0');return false">Funkcja 1</a></li>
-            <li><a href="#" onclick="showDiv('1');return false">Funkcja 2</a></li>
-            <li><a href="#" onclick="showDiv('2');return false">Funkcja 3</a></li>
-            <li><a href="#" onclick="showDiv('3');return false">Funkcja 4</a></li>
-        </ul>
-    </div>
-
-
-    <!-- 4 containers -->
-
-
-    <div id="divLinks">
-
-        <div id="container">
-            <section class="section1">
-                <h1>Porównaj ceny</h1>
-                <article>
-                    <img class="function1" src="images/function_lesser.jpg" alt="Porównaj ceny">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </article>
-            </section>
-        </div>
-
-        <div id="container0">
-            <section class="section1">
-                <h1>Porównaj ceny</h1>
-                <article>
-                    <img class="function1" src="images/function_lesser.jpg" alt="Porównaj ceny">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </article>
-            </section>
-        </div>
-
-
-
-        <div id="container1">
-            <section class="section1">
-                <h1>Znajdź najlepszą okazję</h1>
-                <article>
-                    <img class="function1" src="images/function2lesser.jpg" alt="Znajdź najlepszą okazję">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </article>
-            </section>
-        </div>
-
-
-
-        <div id="container2">
-            <section class="section1">
-                <h1>Znajdź najlepszą alternatywę</h1>
-                <article>
-                    <img class="function1" src="images/function3lesser.jpg" alt="Znajdź najlepszą alternatywę">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </article>
-            </section>
-        </div>
-
-
-
-        <div id="container3">
-            <section class="section1">
-                <h1>Znajdź produkt w sklepie</h1>
-                <article>
-                    <img class="function1" src="images/function4lesser.jpg" alt="Znajdź produkt w sklepie">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Integer ac turpis a sapien fermentum ultrices. Donec viverra quam eu dolor eleifend tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </article>
-            </section>
-        </div>
-    </div>
-</div>
-
-<div class="second_background">
-    <div class="formi">
-        <form action="/action_page.php">
-
-            <span class="form-text">Bądź pewny, że będziesz z nami podczas premiery.<br> Zostaw nam swoje dane, aby być wtedy razem z nami<br></span>
-            <input type="email" name="firstname" value="" placeholder="E-Mail">
-            <br>
-            <span class="form-text">lub/i   </span><br>
-            <input type="text" name="lastname" value="" placeholder="Phone number">
-            <br><br>
-            <input class="button wobble-hor-bottom" type="submit" value="Wyślij">
-        </form>
-        <div class="form-text">
-            <input type="checkbox" value="none" id="Radio" name="check" unchecked />
-            <label for="Radio">Oświadczam, że zapoznałem się z <a class="regulamin-none" target="_blank" href="#">regulaminem</a></label>
-        </div>
-    </div>
-</div>
+</header>
+<!-------------------------------------------------------------------------------------------------
+        -------------------------------------SOCIAL MEDIA (add responsive ver)
+        --------------------------------------------------------------------------------------------------->
+<aside>
 <div class="karolina">
 
     <div class="social-media">
@@ -188,120 +198,363 @@
         </div>
     </div>
 </div>
+</aside>
+<main>
+    <!-------------------------------------------------------------------------------------------------
+        -------------------------------------ADVANTAGES
+        --------------------------------------------------------------------------------------------------->
+<section class="advantages">
 
 
-
-
-
-<div class="third_background">
-<div class="row">
-
-    <div>
-        <div class="crew">
-            <h1>
-                Poznaj nasz zespół
-            </h1>
-
+    <div class="container-fluid center-block text-center">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+            <h2>Darmowy</h2>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+            <h2>Wygodny</h2>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            <h2>Wielofunkcyjny</h2>
         </div>
     </div>
-
-
-
-    <div class="col-3">
-
-        <img src="img/k.jpg" class="img-circle" alt="Cinque Terre" width="90" height="120">
-            <div class="k">
-                <h3>Karolina Skiba </h3>
+    </div>
+</section>
+    <!-------------------------------------------------------------------------------------------------
+        -------------------------------------FUNCTIONS INTRO
+        --------------------------------------------------------------------------------------------------->
+  <div class="big-background">
+    <div id="poznajnas">
+    <section class="functions-intro">
+        <div class="container-fluid fuctions-intro">
+            <div class="row">
+                <div class="col-lg-offset-4 col-lg-4">
+                    <h1>Aplikacja</h1>
+                </div>
             </div>
-        <a class="g" href = "#"> karolina.joanna.skiba@gmail.com</a>
-    </div>
-    <div class="col-3">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Naszą misją jest maksymalnie ułatwić Ci znalezienie pożądanych produktów lub usług. <br />
+                        <br /> Zobacz w jaki sposób.</p>
+                </div>
 
-        <img src="img/pg.jpg" class="img-circle" alt="Cinque Terre" width="130" height="120">
-        <div class="k">
-            <h3>Piotr Golianek </h3>
-    </div>
-        <a class="g" href = "#"> email@gmail.com</a>
-    </div>
-    <div class="col-3">
-
-        <img src="img/p.jpg" class="img-circle" alt="Cinque Terre" width="100" height="120">
-            <div class="k">
-                <h3>Patryk Żak </h3>
             </div>
-        <a class="g" href = "#"> email@gmail.com</a>
 
+        </div>
+
+    </section>
     </div>
-    <div class="col-3">
 
-        <img src="img/g.jpg" class="img-circle" alt="Cinque Terre" width="100" height="120">
-            <div class="k">
-                <h3>Grzegorz Wieczorek </h3>
+    <!-------------------------------------------------------------------------------------------------
+        -------------------------------------FUNCTIONS
+        --------------------------------------------------------------------------------------------------->
+    <section class="functions">
+    <div class="black_background">
+    <div class="container-fluid center-block">
+
+        <!-- Nav tabs -->
+      <div class="row row-color">
+        <div class="col-lg-offset-3 col-lg-6 col-xs-offset-3 col-xs-6"> <!--add blue path -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Porównaj ceny</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Znajdź najlepszą okazję</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Znajdź najlepszą alternatywę</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Znajdź produkt w sklepie</a></li>
+        </ul>
+        </div>
+      </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-xs-12">
+                        <img class="function1 img-responsive center-block" src="images/function_lesser.jpg" alt="Porównaj ceny">
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <h2>Porównaj ceny</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                    </div>
+                </div>
             </div>
-        <a class="g" href = "#"> email@gmail.com</a>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12">
+                                <img class="function1 img-responsive center-block" src="images/function2lesser.jpg" alt="Znajdź najlepszą okazję">
+                            </div>
+                            <div class="col-lg-6 col-xs-12">
+                                <h2>Znajdź najlepszą okazję</h2>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="messages">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-xs-12">
+                        <img class="function1 img-responsive center-block" src="images/function3lesser.jpg" alt="Znajdź najlepszą alternatyw">
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <h2>Znajdź najlepszą alternatywę</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="settings">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-xs-12">
+                        <img class="function1 img-responsive center-block" src="images/function4lesser.jpg" alt="Znajdź produkt w sklepie">
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <h2>Znajdź produkt w sklepie</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
-
-
-</div>
-
-</div>
-
-
-
-
-
-
-
-<div class="contactdiv">
-
-    <div class="contacttext">
-        <h1>Kontakt z autorem</h1>
-        <p>Jeśli masz ochotę nawiązać współpracę reklamową - zapraszam do kontaktu mailowego.</p>
     </div>
+    </section>
+  </div>
+      <!-------------------------------------------------------------------------------------------------
+              -------------------------------------Premiera zapis
+              --------------------------------------------------------------------------------------------------->
+      <div id="premiere">
+        <section class="functions-intro">
+          <div class="container-fluid fuctions-intro">
+            <div class="row">
+              <div class="col-lg-offset-4 col-lg-4">
+                <h1>Download</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p>Nasza aplikacja nie jest jeszcze gotowa. <br />Dopracowujemy ją, aby sprostać Twoim oczekiwaniom. <br />
+                  Już dziś zapisz się na premierę, żeby mieć pewność, że skorzystasz z aplikacji jako pierwszy.</p>
+              </div>
+            </div>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <div class="col-lg-offset-4 col-lg-4">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Wpisz swój e-mail">
+                </div>
+              </div>
+              <div class="row">
+              <div class="form-group">
+                <div class="col-lg-offset-4 col-lg-4">
+                  <a href="#" role="button" type="submit" style="margin-left: 40%" class="btn btn-primary btn-lg">Zapisy</a>
+                </div>
+              </div>
+              </div>
+            </form>
+
+          </div>
 
 
-<div  class="vibrate-1">
+        </section>
+      </div>
+<!-------------------------------------------------------------------------------------------------
+        -------------------------------------O-Nas (Karolina)
+        --------------------------------------------------------------------------------------------------->
+        <div id="onas">
+        <div class="page-header">
+          <h1> Poznaj naszą drużynę - zapraszamy do kontaktu  </h1>
+            <div class="container">
 
-    <a href="#" class="bluebutton" >Nawiązanie współpracy</a>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3 col-lg-3">
+                        <img src="images/karolina.jpg" class ="img-responsive  img-team "  data-animate="flipInX" alt="karolina">
+                        <div class="caption col-xs-12 " data-animate="fadeIn" >
+                              <h3>Karolina Skiba</h3>
+                              <p>Crew Share2travel</p>
+                              <a href = "#"> karolina.skiba@gmail.com</a><br/>
+                          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3  col-lg-3" >
+                        <img src="images/patryk.jpg" class ="img-responsive  img-team " data-animate="flipInX" alt="karolina">
+                        <div class="caption col-xs-12 " data-animate="fadeIn">
+                            <h3>Patryk Żak</h3>
+                            <p>Crew Share2travel</p>
+                            <a href = "#"> patryk.zak@gmail.com</a><br/>
+                          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3  col-lg-3">
+                    <img src="images/piotr.jpg" class ="img-responsive  img-team " data-animate="flipInX" alt="karolina">
+                      <div class="caption col-xs-12 "data-animate="fadeIn">
+                      <h3>Piotr Golianek</h3>
+                      <p>Crew Share2travel</p>
+                      <a href = "#"> piotr.golianek@gmail.com</a><br/>
+                      Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                    </div>
 
-</div>
-    </div>
+                    </div>
+                    <div class="  col-xs-12 col-md-3  col-lg-3">
+                    <img src="images/grzesiek.jpg" class ="img-responsive  img-team " data-animate="flipInX" alt="karolina">
+                      <div class="caption col-xs-12 " data-animate="fadeIn">
+                      <h3>Grzegorz Wieczorek</h3>
+                      <p>Crew Share2travel</p>
+                      <a href = "#"> grzegorz.wiecz@gmail.com</a><br/>
+
+                      Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+<!-------------------------------------------------------------------------------------------------
+        -------------------------------------FOOTER (Karolina)
+        --------------------------------------------------------------------------------------------------->
 
 <footer>
 
-    <div class="contact">
-        <h5>Regulaminy</h5>
-        <ol><li><a href="#">regulamin</a></li>
-            <li><a href="#">regulamin sprzedaży</a></li>
-            <li><a href="#">regulamin produktu</a></li>
-        </ol>
+  <div class="container-fluid back-d-form-footer">
+    <div class="container ">
 
-    </div>
-    <div class="contact">
-        <h5>Biuro Londyn</h5>
-        ToBuy 40-44 Uxbridge Road<br>Ealing, London, W5 2BS
-
-    </div>
-
-
-
-    <div class ="contact">
-        <h5>Biuro Polska
-        </h5>
-
-        <div class="tel">
-            <i class="icon-phone" > 577-522-825 </i>
+      <div class="row">
+        <div class=" col-xs-12 ">
+          <h2>Formularz kontaktowy</h2>
+          Jeśli masz ochotę nawiązać współpracę reklamową - zapraszam do kontaktu mailowego.
         </div>
-        <div class="map">
-            <i class="icon-location" >ul. Jagiellońska 10/2<br>70-437 Szczecin Polska </i>
+        <div class="formsgroup">
+          <form action="https://formspree.io/tobuy.tobuy@o2.pl"
+                method="POST">
+
+            <div class="col-lg-3 col-md-6 col-xs-12 col-lg-offset-1">
+              <input type="text"name="name" class="form-control forms" placeholder="imię i nazwisko" required>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-12">
+              <input type="phone" name="tel" class="form-control forms" placeholder="telefon" required>
+            </div>
+            <div class="col-lg-4 col-md-12 col-xs-12">
+              <input type="email" name="email" class="form-control forms" placeholder="email" required>
+            </div>
+            <div class="row">
+              <div class="col-lg-10 col-xs-12 col-lg-offset-1 ">
+                <textarea class="form-control textarea_form " name="message" placeholder="treść wiadomości" required></textarea>
+              </div>
+            </div>
+
+            <div  class="vibrate-1">
+              <button type="submit" class="btn btn-primary btn-lg button_footer">Napisz do nas</button>
+            </div>
+
+          </form>
         </div>
+      </div>
+
     </div>
 
 
-    <div class="copy">
-        &copy 2017 Zawartość tej strony jest chroniona prawem autorskim i należy do autora.
+  </div>
+
+
+  <div id="kontakt">
+    <div class="container contactdiv">
+
+
+      <div class="row">
+
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <div class ="contact">
+            <p>
+              <b>Klient kiedyś zapytał mnie:</b> </br>
+              - Co to właściwie są te aplikacje ? <br>
+              <b>
+                Nie bój się zadawać prostyh pytań.
+              </b>
+              My też nie mamy  pojęcia o Twojej pracy, ale chętnie wykonamy dla Ciebie najlepszą, jaką można sobie wymarzyć.
+
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <div class ="contact">
+            <h4><b>Regulaminy</b></h4>
+            <ol class="regulations">
+              <li><a href="#">Regulamin sprzedaży</a></li>
+              <li><a href="#">Regulamin produktu</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <div class ="contact">
+            <h4> <b>Godziny pracy</b></h4>
+            Telefon czynny jest od poniedziałku do piąku
+            w godzinach od 10:00 do 18:00.
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-12 col-lg-3">
+          <div class ="contact">
+            <h4><b>Biuro</b></h4>
+            <div class="tel">
+              577-522-825
+            </div>
+            <div class="map">
+               ul. Kolorowa 7 <br>20-405 Lublin
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div class="copy">
+            &copy 2017 Zawartość tej strony jest chroniona prawem autorskim i należy do autora.
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </footer>
+<section id="cookie-warn">
+  <p><strong> UWAGA! <br> </strong> Niniejsza strona wykorzystuje pliki cookies.
+    Informacje uzyskane za pomocą cookies wykorzystywane są głównie
+    w celach statystycznych. Pozostając na stronie godzisz się na
+    ich zapisywanie w Twojej przeglądarce.
+    <a href="javascript:void(0);" id="close-cookie-warn">
+      <strong>Zamknij ostrzeżenie </strong></a></p>
+</section>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="plugins.js"></script>
+
+
+
+<script src="jquery.viewportchecker.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('*[data-animate]').addClass('hided').each(function(){
+            $(this).viewportChecker({
+                classToAdd: 'show animated ' + $(this).data('animate'),
+                classToRemove: 'hided',
+                offset: '30%'
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
+
+
