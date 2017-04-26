@@ -1,6 +1,14 @@
 body {
     position: relative;
 }
+.big-background {
+    background-image: url(../images/bigcover.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/**********************************************************
+----------------------NAVIGATION
+ **********************************************************/
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -9,10 +17,10 @@ body {
     background-color: transparent;
 }
 
-
-/**********************************************************
-----------------------NAVIGATION
- **********************************************************/
+.navbar-fixed-top.scrolled {
+    background-color: rgba(0, 0, 0, 1) !important;
+    transition: background-color 1.3s ease-in;
+}
 
 .navbar-brand img {
     max-width: auto;
@@ -297,11 +305,11 @@ section.advantages > .container-fluid {
 
 
 section.functions-intro {
-    background-image: url("../images/cover7.jpg");
+    /*background-image: url("../images/cover7.jpg");
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .functions-intro {
@@ -343,11 +351,11 @@ section.functions-intro .container-fluid {
 ----------------------FUNCTIONS
  **********************************************************/
 section.functions {
-    background-image: url("../images/functions_cover2.jpg");
-    background-attachment: fixed;
+    /*background-image: url("../images/functions_cover2.jpg");
+    background-attachment: fixed;*/
 }
 .black_background {
-    background-color: rgba(36, 117, 172, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 section.functions img {
     max-width: 70%;
