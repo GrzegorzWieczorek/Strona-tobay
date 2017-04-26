@@ -1,3 +1,15 @@
+body {
+    position: relative;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffd700 !important;
+    border-bottom: 1px #FFFFFF solid !important;
+    background-color: transparent;
+}
+
+
 /**********************************************************
 ----------------------NAVIGATION
  **********************************************************/

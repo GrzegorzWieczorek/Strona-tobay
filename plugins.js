@@ -16,3 +16,4 @@ $(document).ready(function() {
         $("#cookie-warn").show();
     }
 });
+
