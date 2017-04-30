@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 /**********************************************************
 ----------------------NAVIGATION
  **********************************************************/
@@ -16,7 +17,10 @@ body {
     border-bottom: 1px #FFFFFF solid !important;
     background-color: transparent;
 }
+.navbar-fixed-top {
 
+    transition: background-color 1.3s ease-in;
+}
 .navbar-fixed-top.scrolled {
     background-color: rgba(0, 0, 0, 1) !important;
     transition: background-color 1.3s ease-in;
@@ -49,23 +53,14 @@ body {
     color: #FFFFFF;
     border: 1px solid transparent;
 }
-.navbar-default .navbar-nav > li > a:link {
-    color: #ffd700;
-    border-bottom: 1px transparent solid;
-}
+
 /* visited link */
-.navbar-default .navbar-nav > li > a:visited {
-    color: #FFFFFF;
-    border-bottom: 1px transparent solid;
-}
+
 .navbar-default .navbar-nav > li > a:hover {
     color: #ffd700;
     border-bottom: 1px #FFFFFF solid;
 }
-.navbar-default .navbar-nav > li > a:active {
-    color: #FFFFFF;
-    border-bottom: 1px #FFFFFF solid;
-}
+
 
 /**********************************************************
 --------------------------SLIDE SHOW
@@ -78,113 +73,75 @@ body {
     z-index: 2;
 }
 
-@media screen and (min-width: 1495px) { /* upgrade media queries */
-    .carousel-caption {
-        right: 25%;
-        left: 25%;
-        padding-bottom: 25%;
-    }
-}
-@media screen and (max-width: 668px) { /* upgrade media queries */
-    .carousel-caption {
-        right: 25%;
-        left: 25%;
-        padding-bottom: 5%;
+/* add media queries */
 
-    }
-}
+
 .carousel-caption {
+
     position: absolute;
-    right: 15%;
-    bottom: 35px;
+    top: 25%;
+    bottom: 50%;
+    width: 50%;
+    margin: auto;
+
 }
-.caption2 > .carousel-caption {
-    font-family: "Lato Heavy";
+.carousel-caption > img.img-responsive {
+    margin: 0 0;
+    display: inline;
+}
+
+.carousel-caption > h1 {
+    font-family: Lato Heavy;
     font-weight: bold;
+    font-size: 5em;
+    letter-spacing: 0.5rem;
+    text-align: center;
 }
+
 
 h1.caption2 {
+    /*
     font-size: 45px;
     letter-spacing: 2px;
     margin-right: 50px;
+    */
 }
+@media only screen and (max-width: 960px) and (orientation: portrait) {
 
-.btn-lg, .btn-group-lg > .btn {
-    text-transform: uppercase;
-}
-@media screen and (max-width: 768px) { /* upgrade media queries */
-    h1.caption2 {
-        font-size: 30px;
-        letter-spacing: 2px;
-        margin-right: 5px;
-    }
-}
-@media screen and (max-width: 568px) { /* upgrade media queries */
-    h1.caption2 {
-        font-size: 20px;
-        letter-spacing: 2px;
-        margin-right: 5px;
+    .carousel-inner > .item > img {
+        max-width: 200%;
     }
 }
 /**********************************************************
 ---------------------------BUTTON
  **********************************************************/
-.btn-lg, .btn-group-lg > .btn {
+
+.btn-header {
     padding: 2%;
     font-size: 1.7rem;
     line-height: 1.3333333;
-    border-radius: 7px;
-    margin-top: 1%;
-    margin-right: 17%;
+    border-radius: 1.5rem;
+    margin: auto;
     font-weight: 800;
-}
-
-.btn-primary {
     background-color: transparent;
     border: 3px solid #FFFFFF;
-
+    text-transform: uppercase;
 }
 
-/* unvisited link */
-.btn-primary:link {
-    background-color: transparent;
-    border: 3px solid #FFFFFF;
-    color: #FFFFFF;
-}
+.carousel-caption > .btn-header {
+    margin-top: 3%;
 
-/* visited link */
-.btn-primary:visited {
-    color: #FFFFFF;
 }
-
 /* mouse over link */
-.btn-primary:hover {
-    background-color: #ffd700;
+.btn-header:hover {
+    background-color: #00ECC9;
     border: 3px solid #FFFFFF;
-}
-.btn-primary:focus {
-    background-color: transparent;
-    border: 3px solid #FFFFFF;
-}
-/* selected link */
-.btn-primary:active {
-    background-color: transparent;
-    border: 3px solid #FFFFFF;
-    color: #FFFFFF;
-}
-.btn-primary .active {
-    background-color: transparent;
-    border: 3px solid #FFFFFF;
-
-}
-.btn:focus {
-background-color: transparent;
-border: 3px solid #FFFFFF;
 }
 
     /**********************************************************
 ---------------------------SOCIAL MEDIA
      **********************************************************/
+
 
 .social-media{
     color:white;
@@ -290,27 +247,20 @@ section.advantages h2 {
     color: #adff2f;
 }
 section.advantages > .container-fluid {
-   padding-top: 20px;
-   padding-bottom: 20px;
+    padding-top: 8% !important;
+    padding-bottom: 8% !important;
 }
-.col-sm-6, .col-xs-12 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+@media only screen and (max-width: 960px)  {
+    section.advantages > .col-sm-6, .col-xs-12 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
-
 /**********************************************************
 ----------------------FEATURES INTRO
  **********************************************************/
 
 
-
-section.functions-intro {
-    /*background-image: url("../images/cover7.jpg");
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-}
 
 .functions-intro {
     height: 50%;
@@ -322,7 +272,7 @@ section.functions-intro {
     text-align: center;
     color: white;
     font-family:Dosis;
-    margin-bottom: 30px;
+    margin-bottom: 8%;
 
 
 }
@@ -330,13 +280,13 @@ section.functions-intro {
     text-align: center;
     font-family:Dosis;
     font-size: 2.5rem;
-    line-height: 50px;
+    line-height: 10rem;
 
 }
 
 section.functions-intro .container-fluid {
-    padding-top: 30px;
-    padding-bottom: 90px;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-color: rgba(0, 0, 0, 0.5);
 
 }
@@ -350,10 +300,7 @@ section.functions-intro .container-fluid {
 /**********************************************************
 ----------------------FUNCTIONS
  **********************************************************/
-section.functions {
-    /*background-image: url("../images/functions_cover2.jpg");
-    background-attachment: fixed;*/
-}
+
 .black_background {
     background-color: rgba(0, 0, 0, 0.75);
 }
@@ -362,21 +309,22 @@ section.functions img {
     height: auto;
     text-align: center;
     border-radius: 5%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
 }
 
 section.functions .nav-tabs {
     border-bottom: 1px solid #ddd;
     font-family: Dosis;
-    font-size: 1.7rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 2.3rem;
+    margin: auto;
+    width: 50%;
 }
 .nav-tabs > li > a {
     color: #ffffff;
 }
+
 .nav-tabs > li > a:hover {
     color: #555;
 }
@@ -390,10 +338,23 @@ section.functions p {
 
 }
 section.advantages > .container-fluid {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
+.functions-insight {
+    margin-top: 1.5%;
+}
+.functions-insight p {
+    line-height: 4rem;
+}
+
+@media only screen and (min-width: 960px) {
+    .functions-insight p {
+        line-height: 4rem;
+        width: 70%;
+    }
+}
 /**********************************************************
 ----------------------PREMIERE
  **********************************************************/
@@ -405,16 +366,40 @@ section.advantages > .container-fluid {
     width: auto;
     height: 50%;
 }
+#premiere p {
+    line-height: 7rem;
+}
 #premiere .container-fluid {
-    padding-top: 30px;
-    padding-bottom: 90px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     background-color: #2475AC;
 }
 .form-horizontal .form-group {
     margin-right: 0;
     margin-left: 0;
 }
-
+#premiere .functions-intro h1 {
+    margin-bottom: 2%;
+}
+.e-mail {
+    width: 30%;
+}
+@media only screen and (max-width: 960px) {
+    .e-mail {
+        width: 50%;
+    }
+}
+#premiere .btn-header {
+    padding: 1% !important;
+}
+@media only screen and (max-width: 960px) {
+    #premiere .btn-header {
+        padding: 2% !important;
+    }
+}
+#premiere .button {
+    text-align: center;
+}
 /**********************************************************
 ----------------------O NAS (Karolina)
  **********************************************************/
@@ -621,6 +606,8 @@ footer{
     border-radius: 7px;
     margin-top: 1%;
     margin-right: 0%;
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
 
 }
 .button_footer:hover{

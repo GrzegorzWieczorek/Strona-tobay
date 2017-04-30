@@ -26,3 +26,20 @@ $(document).ready(function() {
         });
     });
 
+
+
+
+if ($(window).width() < 960) {
+    $('.carousel-indicators').hide();
+}
+else {
+    $('.carousel-indicators').show();
+}
+
+if ($(window).width() < 960) {
+    $('.btn-header').css("padding", "5%")
+}
+else {
+    $('.btn-header').css("padding", "2%")
+}
+
