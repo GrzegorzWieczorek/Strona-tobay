@@ -74,6 +74,11 @@ body {
 }
 
 /* add media queries */
+@media only screen and (max-width: 960px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
 
 
 .carousel-caption {
@@ -138,6 +143,11 @@ h1.caption2 {
     border: 3px solid #FFFFFF;
 }
 
+@media screen and (max-width: 960px) {
+    .btn-header {
+        padding: 5%;
+    }
+}
     /**********************************************************
 ---------------------------SOCIAL MEDIA
      **********************************************************/
@@ -305,7 +315,7 @@ section.functions-intro .container-fluid {
     background-color: rgba(0, 0, 0, 0.75);
 }
 section.functions img {
-    max-width: 70%;
+    /*max-width: 70%; */
     height: auto;
     text-align: center;
     border-radius: 5%;
@@ -316,6 +326,7 @@ section.functions img {
 
 section.functions .nav-tabs {
     border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     font-family: Dosis;
     font-size: 2.3rem;
     margin: auto;
@@ -347,13 +358,21 @@ section.advantages > .container-fluid {
 }
 .functions-insight p {
     line-height: 4rem;
+    margin: 2% 5%;
 }
-
+.functions-insight h2 {
+    line-height: 4rem;
+    margin: 2% 5%;
+}
 @media only screen and (min-width: 960px) {
     .functions-insight p {
         line-height: 4rem;
-        width: 70%;
+
     }
+}
+
+.nav-tabs > li {
+    text-align: center;
 }
 /**********************************************************
 ----------------------PREMIERE
