@@ -19,10 +19,12 @@
     <!-------------------------------------------------------------------------------------------------
     -----------------------------------------FAVICONS + FONTELLO + CSS
     --------------------------------------------------------------------------------------------------->
-
+  
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="fontello.css" type="text/css">
     <link rel="stylesheet" href="fontello_1.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css">
+
                                       <!--ANIMATE-->
   <link rel="stylesheet" href="animate.css" type="text/css">
 
@@ -110,7 +112,7 @@
                 <img src="images/cover2.jpg" alt="To Buy">
                 <div class="carousel-caption">
                     <img src="images/logotyp.png" class="img-responsive" alt="To Buy | Brand">
-                    <button type="submit" class="btn btn-primary btn-lg btn-header center-block">POZNAJ</button>
+                    <button type="submit" onclick="location.href = '#poznajnas'" class="btn btn-primary btn-lg btn-header center-block">POZNAJ</button>
                 </div>
         </div>
 
@@ -119,21 +121,21 @@
                 <img src="images/cover3.jpg" alt="To Buy">
                 <div class="carousel-caption">
                     <img src="images/slide2.png" class="img-responsive" alt="Obserwuj zmiany cen">
-                    <button type="submit" class="btn btn-primary btn-lg btn-header center-block">OBSERWUJ</button>
+                    <button type="submit" onclick="location.href = '#poznajnas'" class="btn btn-primary btn-lg btn-header center-block">OBSERWUJ</button>
                 </div>
           </div>
         <div class="item">
             <img src="images/cover1.jpg" alt="To Buy">
             <div class="carousel-caption">
                 <img src="images/slide3.png" class="img-responsive" alt="Znajdź najtańszy produkt">
-                <button type="submit" class="btn btn-primary btn-lg btn-header center-block">SZUKAJ</button>
+                <button type="submit" onclick="location.href = '#poznajnas'" class="btn btn-primary btn-lg btn-header center-block">SZUKAJ</button>
             </div>
     </div>
     <div class="item">
         <img src="images/cover4.jpg" alt="To Buy">
         <div class="carousel-caption">
             <img src="images/slide4.png" class="img-responsive" alt="Sprawdź dostępność">
-            <button type="submit" class="btn btn-primary btn-lg btn-header center-block">ZOBACZ</button>
+            <button type="submit"  onclick="location.href = '#poznajnas'" class="btn btn-primary btn-lg btn-header center-block">ZOBACZ</button>
         </div>
     </div>
     </div>
@@ -213,7 +215,7 @@
 <section class="advantages">
 
 
-    <div class="container-fluid center-block text-center">
+    <div class="container-fluid center-block text-center slide-animation">
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
@@ -236,20 +238,21 @@
   <div class="big-background">
     <div id="poznajnas">
     <section class="functions-intro">
-        <div class="container-fluid fuctions-intro">
+        <div class="container-fluid ">
+            <div class="slide-animation">
             <div class="row">
-                <div class="col-lg-offset-4 col-lg-4">
+                <div class="col-lg-offset-4 col-lg-4 ">
                     <h1>Aplikacja</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Naszą misją jest maksymalnie ułatwić Ci znalezienie pożądanych produktów lub usług.</p>
+                    <p>Zadaniem aplikacji jest maksymalnie ułatwić Ci znalezienie pożądanych produktów lub usług.</p>
                        <p>Zobacz w jaki sposób.</p>
                 </div>
 
             </div>
-
+            </div>
         </div>
 
     </section>
@@ -264,6 +267,7 @@
 
         <!-- Nav tabs -->
       <div class="row row-color">
+          <div class="slide-expand">
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Porównaj ceny</a></li>
 
@@ -273,7 +277,7 @@
 
                     <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Znajdź produkt w sklepie</a></li>
         </ul>
-
+          </div>
       </div>
 
         <!-- Tab panes -->
@@ -282,11 +286,15 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="slide-left">
                         <img class="function1 img-responsive center-block" src="images/function_lesser.jpg" alt="Porównaj ceny">
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 functions-insight">
+                        <div class="slide-right">
                         <h2>Porównaj ceny</h2>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -295,11 +303,15 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="slide-left">
                                 <img class="function1 img-responsive center-block" src="images/function2lesser.jpg" alt="Znajdź najlepszą okazję">
+                                </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 functions-insight">
+                                <div class="slide-right">
                                 <h2>Znajdź najlepszą okazję</h2>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -309,11 +321,15 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="slide-left">
                         <img class="function1 img-responsive center-block" src="images/function3lesser.jpg" alt="Znajdź najlepszą alternatyw">
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 functions-insight">
+                        <div class="slide-right">
                         <h2>Znajdź najlepszą alternatywę</h2>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -322,18 +338,23 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="slide-left">
                         <img class="function1 img-responsive center-block" src="images/function4lesser.jpg" alt="Znajdź produkt w sklepie">
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 functions-insight">
+                        <div class="slide-right">
                         <h2>Znajdź produkt w sklepie</h2>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         </div>
+            </div>
     </div>
-    </div>
+
     </section>
   </div>
       <!-------------------------------------------------------------------------------------------------
@@ -342,6 +363,7 @@
       <div id="premiere">
         <section class="functions-intro">
           <div class="container-fluid fuctions-intro">
+              <div class="slide-animation">
               <div class="center-block">
                 <h1>Download</h1>
               </div>
@@ -367,6 +389,7 @@
 
             </form>
 
+          </div>
           </div>
 
 
@@ -559,6 +582,48 @@
                 classToRemove: 'hided',
                 offset: '30%'
             });
+        });
+    });
+</script>
+<script>
+    $(window).scroll(function() {
+        $('.slide-animation').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideUp");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $('.slide-expand').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideUp");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $('.slide-left').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideRight");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $('.slide-right').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideLeft");
+            }
         });
     });
 </script>

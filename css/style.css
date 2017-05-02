@@ -6,7 +6,9 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-
+.slide-left, .slide-right {
+    visibility: hidden;
+}
 /**********************************************************
 ----------------------NAVIGATION
  **********************************************************/
@@ -223,6 +225,12 @@ h1.caption2 {
 /**********************************************************
 ----------------------ADVANTAGES
  **********************************************************/
+.slide-animation {
+    visibility: hidden;
+}
+.slide-expand {
+    visibility: hidden;
+}
 
 .glyphicon-euro, .glyphicon-ok-sign, .glyphicon-cog {
     font-size: 7rem;
