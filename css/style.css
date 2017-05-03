@@ -56,9 +56,17 @@ body {
     border: 1px solid transparent;
 }
 
+/* visited link */
+.navbar-default .navbar-nav > li > a:visited {
+    color: #FFFFFF;
+    border-bottom: 1px transparent solid;
 }
 .navbar-default .navbar-nav > li > a:hover {
     color: #ffd700;
+    border-bottom: 1px #FFFFFF solid;
+}
+.navbar-default .navbar-nav > li > a:active {
+    color: #FFFFFF;
     border-bottom: 1px #FFFFFF solid;
 }
 
@@ -131,6 +139,7 @@ h1.caption2 {
     background-color: transparent;
     border: 3px solid #FFFFFF;
     text-transform: uppercase;
+    font-family: Arial;
 }
 
 .carousel-caption > .btn-header {
