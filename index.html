@@ -23,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="fontello.css" type="text/css">
     <link rel="stylesheet" href="fontello_1.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css">
+
                                       <!--ANIMATE-->
   <link rel="stylesheet" href="animate.css" type="text/css">
 
@@ -37,7 +39,7 @@
         -------------------------------------GOOGLE FONTS
         --------------------------------------------------------------------------------------------------->
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
      <!--change name, add file -->
@@ -73,18 +75,27 @@
         );
 
 
+
     </script>
 
 </head>
+
 <body data-spy="scroll" data-target="#mainnav" data-offset="5">
+
+<aside>
 <!-------------------------------------------------------------------------------------------------
         -------------------------------------SCROLLUP (add responsive ver)
         --------------------------------------------------------------------------------------------------->
 <a href="#" title="up" class="scrollup"><img src="images/up-chevron-button.png" alt="upup" width="60" height="60"/></a>
+</aside>
 <header>
     <!-------------------------------------------------------------------------------------------------
         -------------------------------------SLIDESHOW (make somehow attachment fixed effect)
         --------------------------------------------------------------------------------------------------->
+    <script>
+
+    </script>
+    <div id = "main-page">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -96,40 +107,36 @@
         </ol>
 
         <!-- Wrapper for slides -->
+
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="images/cover2.jpg" alt="To Buy">
-                <div class="carousel-caption center-block">
-                    <img src="images/brand.png" class="img-responsive" alt="To Buy | Brand">
-                    <a href="#poznajnas" role="button" class="btn btn-primary btn-lg block-center">ZOBACZ</a>
+                <div class="carousel-caption">
+                    <img src="images/logotyp.png" class="img-responsive" alt="To Buy | Brand">
+                    <button type="submit" onclick="location.href = '#poznajnas'" class="btn btn-primary btn-lg btn-header center-block">POZNAJ</button>
                 </div>
         </div>
 
+
             <div class="item">
                 <img src="images/cover3.jpg" alt="To Buy">
-                <div class="caption2">
                 <div class="carousel-caption">
-                    <h1 class="caption2 center-block">Sprawdź jak zmieniają się ceny</h1>
-                    <a href="#poznajnas" role="button" class="btn btn-primary btn-lg block-center">ZOBACZ</a>
-                </div>
+                    <img src="images/slide2.png" class="img-responsive" alt="Obserwuj zmiany cen">
+                    <button type="submit" onclick="location.href = '#poznajnas'" class="btn btn-primary btn-lg btn-header center-block">OBSERWUJ</button>
                 </div>
           </div>
         <div class="item">
             <img src="images/cover1.jpg" alt="To Buy">
-            <div class="caption2">
-                <div class="carousel-caption">
-                    <h1 class="caption2 center-block">Znajdź najtańszy produkt</h1>
-                    <a href="#poznajnas" role="button" class="btn btn-primary btn-lg block-center">ZOBACZ</a>
-                </div>
+            <div class="carousel-caption">
+                <img src="images/slide3.png" class="img-responsive" alt="Znajdź najtańszy produkt">
+                <button type="submit" onclick="location.href = '#poznajnas'" class="btn btn-primary btn-lg btn-header center-block">SZUKAJ</button>
             </div>
     </div>
     <div class="item">
         <img src="images/cover4.jpg" alt="To Buy">
-        <div class="caption2">
-            <div class="carousel-caption">
-                <h1 class="caption2 center-block">Upewnij się czy produkt jest w sklepie</h1>
-                <a href="#poznajnas" role="button" class="btn btn-primary btn-lg block-center">ZOBACZ</a>
-            </div>
+        <div class="carousel-caption">
+            <img src="images/slide4.png" class="img-responsive" alt="Sprawdź dostępność">
+            <button type="submit"  onclick="location.href = '#poznajnas'" class="btn btn-primary btn-lg btn-header center-block">ZOBACZ</button>
         </div>
     </div>
     </div>
@@ -144,6 +151,7 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    </div>
     <!-------------------------------------------------------------------------------------------------
         -------------------------------------NAVIGATION
         --------------------------------------------------------------------------------------------------->
@@ -157,17 +165,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#carousel-example-generic">
-                    <img alt="To Buy" class="img-responsive icon" src="images/projectavatar.png">
+                <a class="navbar-brand" href="#main-page">
+                    <img alt="To Buy" class="img-responsive icon slide-section" src="images/projectavatar.png">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#poznajnas">Aplikacja</a></li>
-                    <li><a href="#premiere">Download</a></li>
-                    <li><a href="#onas">Twórcy</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#main-page" class="slide-section">Home</a></li>
+                    <li><a href="#poznajnas" class="slide-section">Aplikacja</a></li>
+                    <li><a href="#premiere" class="slide-section">Download</a></li>
+                    <li><a href="#onas" class="slide-section">Twórcy</a></li>
+                    <li><a href="#kontakt" class="slide-section">Kontakt</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -176,10 +185,11 @@
 
 </div>
 </header>
+<aside>
 <!-------------------------------------------------------------------------------------------------
         -------------------------------------SOCIAL MEDIA (add responsive ver)
         --------------------------------------------------------------------------------------------------->
-<aside>
+
 <div class="karolina">
 
     <div class="social-media">
@@ -206,7 +216,7 @@
 <section class="advantages">
 
 
-    <div class="container-fluid center-block text-center">
+    <div class="container-fluid center-block text-center slide-animation">
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
@@ -229,20 +239,21 @@
   <div class="big-background">
     <div id="poznajnas">
     <section class="functions-intro">
-        <div class="container-fluid fuctions-intro">
+        <div class="container-fluid ">
+            <div class="slide-animation">
             <div class="row">
-                <div class="col-lg-offset-4 col-lg-4">
+                <div class="col-lg-offset-4 col-lg-4 ">
                     <h1>Aplikacja</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Naszą misją jest maksymalnie ułatwić Ci znalezienie pożądanych produktów lub usług. <br />
-                        <br /> Zobacz w jaki sposób.</p>
+                    <p>Zadaniem aplikacji jest maksymalnie ułatwić Ci znalezienie pożądanych produktów lub usług.</p>
+                       <p>Zobacz w jaki sposób.</p>
                 </div>
 
             </div>
-
+            </div>
         </div>
 
     </section>
@@ -257,14 +268,17 @@
 
         <!-- Nav tabs -->
       <div class="row row-color">
-        <div class="col-lg-offset-3 col-lg-6 col-xs-offset-3 col-xs-6"> <!--add blue path -->
+          <div class="slide-expand">
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Porównaj ceny</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Znajdź najlepszą okazję</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Znajdź najlepszą alternatywę</a></li>
-            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Znajdź produkt w sklepie</a></li>
+
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Znajdź najlepszą okazję</a></li>
+
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Znajdź najlepszą alternatywę</a></li>
+
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Znajdź produkt w sklepie</a></li>
         </ul>
-        </div>
+          </div>
       </div>
 
         <!-- Tab panes -->
@@ -272,12 +286,16 @@
             <div role="tabpanel" class="tab-pane fade in active" id="home">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="slide-left">
                         <img class="function1 img-responsive center-block" src="images/function_lesser.jpg" alt="Porównaj ceny">
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 functions-insight">
+                        <div class="slide-right">
                         <h2>Porównaj ceny</h2>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -285,12 +303,16 @@
             <div role="tabpanel" class="tab-pane fade" id="profile">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-6 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="slide-left">
                                 <img class="function1 img-responsive center-block" src="images/function2lesser.jpg" alt="Znajdź najlepszą okazję">
+                                </div>
                             </div>
-                            <div class="col-lg-6 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 functions-insight">
+                                <div class="slide-right">
                                 <h2>Znajdź najlepszą okazję</h2>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -299,12 +321,16 @@
         <div role="tabpanel" class="tab-pane fade" id="messages">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-xs-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="slide-left">
                         <img class="function1 img-responsive center-block" src="images/function3lesser.jpg" alt="Znajdź najlepszą alternatyw">
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-xs-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 functions-insight">
+                        <div class="slide-right">
                         <h2>Znajdź najlepszą alternatywę</h2>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -312,19 +338,24 @@
         <div role="tabpanel" class="tab-pane fade" id="settings">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-xs-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="slide-left">
                         <img class="function1 img-responsive center-block" src="images/function4lesser.jpg" alt="Znajdź produkt w sklepie">
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-xs-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 functions-insight">
+                        <div class="slide-right">
                         <h2>Znajdź produkt w sklepie</h2>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eros enim, posuere vestibulum nisi id, congue semper enim. Aliquam eros turpis, vestibulum nec justo sed, scelerisque venenatis felis. Vivamus placerat sapien vel est condimentum convallis. Sed ultrices faucibus bibendum. Fusce malesuada vitae turpis finibus feugiat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         </div>
+            </div>
     </div>
-    </div>
+
     </section>
   </div>
       <!-------------------------------------------------------------------------------------------------
@@ -333,32 +364,33 @@
       <div id="premiere">
         <section class="functions-intro">
           <div class="container-fluid fuctions-intro">
-            <div class="row">
-              <div class="col-lg-offset-4 col-lg-4">
+              <div class="slide-animation">
+              <div class="center-block">
                 <h1>Download</h1>
               </div>
-            </div>
             <div class="row">
               <div class="col-lg-12">
-                <p>Nasza aplikacja nie jest jeszcze gotowa. <br />Dopracowujemy ją, aby sprostać Twoim oczekiwaniom. <br />
-                  Już dziś zapisz się na premierę, żeby mieć pewność, że skorzystasz z aplikacji jako pierwszy.</p>
+                <p>Nasza aplikacja nie jest jeszcze gotowa.</p>
+                  <p>Dopracowujemy ją, aby sprostać Twoim oczekiwaniom. </p>
+                  <p>Już dziś zapisz się na premierę, żeby mieć pewność, że skorzystasz z aplikacji jako pierwszy.</p>
               </div>
             </div>
             <form class="form-horizontal">
               <div class="form-group">
-                <div class="col-lg-offset-4 col-lg-4">
+                <div class="center-block e-mail">
                   <input type="email" class="form-control" id="inputEmail3" placeholder="Wpisz swój e-mail">
                 </div>
               </div>
-              <div class="row">
+
               <div class="form-group">
-                <div class="col-lg-offset-4 col-lg-4">
-                  <a href="#" role="button" type="submit" style="margin-left: 40%" class="btn btn-primary btn-lg">Zapisy</a>
+                <div class="button">
+                    <button onclick="location.href='game/index.html'" type="submit" class="btn btn-primary btn-lg btn-header">Zapisz się i zagraj w grę</button>
                 </div>
               </div>
-              </div>
+
             </form>
 
+          </div>
           </div>
 
 
@@ -367,45 +399,51 @@
 <!-------------------------------------------------------------------------------------------------
         -------------------------------------O-Nas (Karolina)
         --------------------------------------------------------------------------------------------------->
+
+
         <div id="onas">
         <div class="page-header">
-          <h1> Poznaj naszą drużynę - zapraszamy do kontaktu  </h1>
+          <h1> Poznaj Twórców - zapraszamy do kontaktu  </h1>
             <div class="container">
 
                 <div class="row">
-                    <div class="col-xs-12 col-md-3 col-lg-3">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <img src="images/karolina.jpg" class ="img-responsive  img-team "  data-animate="flipInX" alt="karolina">
                         <div class="caption col-xs-12 " data-animate="fadeIn" >
                               <h3>Karolina Skiba</h3>
-                              <p>Crew Share2travel</p>
+                              <p>Share2travel Staff</p>
                               <a href = "#"> karolina.skiba@gmail.com</a><br/>
                           Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-3  col-lg-3" >
-                        <img src="images/patryk.jpg" class ="img-responsive  img-team " data-animate="flipInX" alt="karolina">
+                    <div class="col-xs-12 col-sm-6 col-md-6  col-lg-6" >
+                        <img src="images/patryk.jpg" class ="img-responsive  img-team " data-animate="flipInX" alt="patryk">
                         <div class="caption col-xs-12 " data-animate="fadeIn">
                             <h3>Patryk Żak</h3>
-                            <p>Crew Share2travel</p>
+                            <p>Share2travel Staff</p>
                             <a href = "#"> patryk.zak@gmail.com</a><br/>
                           Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-3  col-lg-3">
-                    <img src="images/piotr.jpg" class ="img-responsive  img-team " data-animate="flipInX" alt="karolina">
+                </div>
+
+                  <div class="col-sm-12 col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6  col-lg-6">
+                    <img src="images/piotr.jpg" class ="img-responsive  img-team " data-animate="flipInX" alt="piotr">
                       <div class="caption col-xs-12 "data-animate="fadeIn">
                       <h3>Piotr Golianek</h3>
-                      <p>Crew Share2travel</p>
-                      <a href = "#"> piotr.golianek@gmail.com</a><br/>
+                      <p>Share2travel Staff</p>
+                      <a href = "#"> piotr.golianek@outlook.com</a><br/>
                       Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
                     </div>
 
                     </div>
-                    <div class="  col-xs-12 col-md-3  col-lg-3">
-                    <img src="images/grzesiek.jpg" class ="img-responsive  img-team " data-animate="flipInX" alt="karolina">
+                    <div class="  col-xs-12 col-sm-6 col-md-6  col-lg-6">
+                    <img src="images/grzesiek.jpg" class ="img-responsive  img-team " data-animate="flipInX" alt="grzesiek">
                       <div class="caption col-xs-12 " data-animate="fadeIn">
                       <h3>Grzegorz Wieczorek</h3>
-                      <p>Crew Share2travel</p>
+                      <p>Share2travel Staff</p>
                       <a href = "#"> grzegorz.wiecz@gmail.com</a><br/>
 
                       Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
@@ -413,19 +451,21 @@
 
                     </div>
                 </div>
+                </div>
             </div>
         </div>
         </div>
 
     </main>
+<footer>
 <!-------------------------------------------------------------------------------------------------
         -------------------------------------FOOTER (Karolina)
         --------------------------------------------------------------------------------------------------->
 
-<footer>
+
 
   <div class="container-fluid back-d-form-footer">
-    <div class="container ">
+    <div class="container">
 
       <div class="row">
         <div class=" col-xs-12 ">
@@ -472,11 +512,11 @@
       <div class="row">
 
 
-        <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="col-xs-12  col-lg-3">
           <div class ="contact">
             <p>
-              <b>Klient kiedyś zapytał mnie:</b> </br>
-              - Co to właściwie są te aplikacje ? <br>
+              <b>Klient kiedyś zapytał mnie:</b> </br> <!-- Change the boldface of a text inside of a CSS document using font-weight property -->
+              - Co to właściwie są te aplikacje ? <br> <!-- Do not use the break line element instead manipulate the text inside of a CSS document -->
               <b>
                 Nie bój się zadawać prostyh pytań.
               </b>
@@ -485,7 +525,7 @@
             </p>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-lg-3">
           <div class ="contact">
             <h4><b>Regulaminy</b></h4>
             <ol class="regulations">
@@ -494,7 +534,7 @@
             </ol>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-lg-3">
           <div class ="contact">
             <h4> <b>Godziny pracy</b></h4>
             Telefon czynny jest od poniedziałku do piąku
@@ -502,7 +542,7 @@
           </div>
         </div>
 
-        <div class="col-xs-12 col-md-12 col-lg-3">
+        <div class="col-xs-12  col-lg-3">
           <div class ="contact">
             <h4><b>Biuro</b></h4>
             <div class="tel">
@@ -550,6 +590,48 @@
                 classToRemove: 'hided',
                 offset: '30%'
             });
+        });
+    });
+</script>
+<script>
+    $(window).scroll(function() {
+        $('.slide-animation').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideUp");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $('.slide-expand').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideUp");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $('.slide-left').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideRight");
+            }
+        });
+    });
+    $(window).scroll(function() {
+        $('.slide-right').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideLeft");
+            }
         });
     });
 </script>
