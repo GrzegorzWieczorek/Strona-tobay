@@ -1,16 +1,54 @@
 
-*{cursor: url(images/rsz_wallet.png) 50 50, pointer;}
+*{cursor: url(images/rsz_wallet.png) 50 50, pointer;
+-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+overflow-y:hidden;}
 
 #obiekt{
     position: absolute;
-    height:70px;
-    width:70px;
     max-width: 100%;
     max-height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     object-fit: contain;
+}
+
+@media screen and (orientation:landscape)
+{
+   #obiekt
+   {
+      height:12vh;
+      width:12vh;
+   }
+}
+
+
+/*wiecej*/
+@media screen and (orientation:portrait)
+{
+   #obiekt
+   {
+      height:12vw;
+      width:12vw;
+   }
+}
+
+@media screen and (min-width: 1001px)
+{
+   #obiekt
+   {
+      height:9vh;
+      width:9vh;
+   }
+}
+
+@media screen and (min-height: 1001px)
+{
+   #obiekt
+   {
+      height:9vh;
+      width:9vh;
+   }
 }
 
 .obiekt0{
@@ -37,25 +75,23 @@
 }
 
 #scoreLabel{
-    font-size: 600px;
     z-index: 20;
     font-family: arial;
     color: #d7e4d9;
     user-select: none;
-    width: 100%;
     text-align: center;
 }
 
 #timer{
     color:gold;
-    font-size: 70px;
+    font-size: 6vh;
     position: absolute;
     z-index: 100;
 }
 
 #topscore{
     color:gold;
-    font-size: 70px;
+    font-size: 6vh;
     position: absolute;
     z-index: 100;
     right:1%;
@@ -68,6 +104,7 @@
 /*Grzesiek*/
 
 #container
+/*tu spoko*/
 {
     background-color: #2c3e50 ;
     width: 65%;
@@ -86,12 +123,13 @@
 }
 
 .submita
+/*tu spoko*/
 {
     width: 100%;
     background-color: #2ecc71;
-    font-size:20px;
+    font-size:3vh;
     color: white;
-    padding: 15px 10px;
+    padding: 2%;
     margin-top: 1%;
     margin-bottom: 1%;
     border: none;
@@ -113,10 +151,10 @@
     background-color: #349CDB;}
 
     img{
-        display: inline-block;
-        width:100%;
+        display: block;
         height: auto;
-        /*margin-bottom: 1%;*/
+        width: 100%;
+        margin:auto;
         vertical-align: middle; /*naprawa dziwnego marginu na dole*/
 }
 

@@ -6,7 +6,7 @@ $(document).ready(function(){
   $('#startGry').click(function(event){
 
 
-    $('#scoreLabel').css('font-size',"600px")  //show score to original size
+    $('#scoreLabel').css('font-size',"40vh")  //show score to original size
     $('#container').hide('slow');              //hide menu
     $('#timer').show('slow');                  //show timer
     $('#topscore').html(localStorage.getItem('maxscore'));
@@ -45,7 +45,7 @@ $(document).ready(function(){
         $('#container').show('slow');                       //show back menu
         $('[class^="obiekt"]').remove();                    //remove all objects with class starting with 'obiekt'
         $('#timer').hide('slow');                           //hide timer
-        $('#scoreLabel').css("font-size", "250px");         //resize score and show it above menu 
+        $('#scoreLabel').css("font-size", "20vh");         //resize score and show it above menu 
         
    
 
