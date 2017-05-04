@@ -468,6 +468,9 @@ section.advantages > .container-fluid {
     background-color: #333754;
     opacity: 0.8;
     margin-bottom: 10%;
+    padding:10%;
+    width: 100%;
+    height: auto;
 }
 .caption a:hover{
     text-decoration: none;
@@ -525,6 +528,9 @@ footer{
     text-align: left;
     font-size: 0.75em;
     padding:5%;
+}
+.bold{
+    font-weight: 700;
 }
 .forms{
     margin-bottom: 5%;
@@ -645,17 +651,20 @@ footer{
 
 .button_footer{
     padding: 2%;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     line-height: 1.3333333;
-    border-radius: 7px;
-    margin-top: 1%;
-    margin-right: 0%;
+    border-radius: 1.5rem;
+    margin: auto;
+    font-weight: 800;
     background-color: transparent;
     border: 3px solid #FFFFFF;
+    text-transform: uppercase;
+    font-family: Arial;
 
 }
 .button_footer:hover{
     background-color: #00ECC9;
+    border: 3px solid #FFFFFF;
     -webkit-animation: vibrate-1 0.3s linear infinite both;
     -moz-animation: vibrate-1 0.3s linear infinite both;
     animation: vibrate-1 0.3s linear infinite both;
