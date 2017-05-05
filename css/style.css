@@ -351,24 +351,30 @@ section.functions img {
 }
 
 section.functions .nav-tabs {
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
+    /*border-bottom: 1px solid #ddd;*/
+    /*border-top: 1px solid #ddd;*/
     font-family: Dosis;
     font-size: 2.3rem;
     margin: auto;
     width: 50%;
+    border: none;
+
 }
 .nav-tabs > li > a {
     color: #ffffff;
+    border-radius: 0;
+
 }
 
 .nav-tabs > li > a:hover {
     color: #555;
+
 }
 
 section.functions h2, p {
     color: white;
     font-family:Dosis;
+
 }
 section.functions p {
     font-size: 2rem;
@@ -492,7 +498,7 @@ section.advantages > .container-fluid {
     height: auto;
     margin-bottom:5%;
     margin-top: 5%;
-
+    animation-delay: 0,8s;
 }
 /****************************************** Animate foto ***************************************/
 
@@ -508,8 +514,9 @@ section.advantages > .container-fluid {
  **********************************************************/
 textarea.form-control {
     height: auto;
-    width: 97%;
-    margin-left: 1.7%; }
+    width: 97.777%;
+    margin: 0 auto;
+}
 
 
 footer{
@@ -527,13 +534,13 @@ footer{
     color: #fff;
     text-align: left;
     font-size: 0.75em;
-    padding:5%;
+    padding:2%;
 }
 .bold{
     font-weight: 700;
 }
 .forms{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .regulations{
