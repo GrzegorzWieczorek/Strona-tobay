@@ -56,13 +56,14 @@ body {
     border: 1px solid transparent;
 }
 
+
 /* visited link */
 .navbar-default .navbar-nav > li > a:visited {
     color: #FFFFFF;
     border-bottom: 1px transparent solid;
 }
 .navbar-default .navbar-nav > li > a:hover {
-    color: #ffd700;
+    color: #909090;
     border-bottom: 1px #FFFFFF solid;
 }
 .navbar-default .navbar-nav > li > a:active {
@@ -477,10 +478,32 @@ section.advantages > .container-fluid {
     padding:10%;
     width: 100%;
     height: auto;
+    margin-top:2%;
+    -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease;
 }
 .caption a:hover{
     text-decoration: none;
+
 }
+
+
+.caption:hover{
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transform: scale(1.07);
+    -o-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+}
+
+
+
+
+
+
+
+
+
 
 .caption a{
     text-decoration: none;
@@ -499,7 +522,18 @@ section.advantages > .container-fluid {
     margin-bottom:5%;
     margin-top: 5%;
     animation-delay: 0,8s;
+    -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease;
 }
+
+.img-team:hover{
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transform: scale(1.07);
+    -o-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+}
+
 /****************************************** Animate foto ***************************************/
 
 .hided{
