@@ -277,7 +277,7 @@ section.advantages > .container-fluid {
     padding-bottom: 8% !important;
 }
 @media only screen and (max-width: 960px)  {
-    section.advantages > .col-sm-6, .col-xs-12 {
+    section.advantages > .col-sm-6>.col-xs-12 {
         margin-top: 5%;
         margin-bottom: 5%;
     }
