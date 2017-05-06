@@ -31,7 +31,20 @@ body {
 .navbar-brand img {
     max-width: auto;
     height: 100%;
+    -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease;
 }
+
+.navbar-brand img:hover{
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+
+
 .navbar-brand {
     padding: 5px 5px;
 }
@@ -546,6 +559,9 @@ section.advantages > .container-fluid {
 /**********************************************************
 ----------------------FOOTER (Karolina)
  **********************************************************/
+.cooperation{
+    line-height: 3em;
+}
 textarea.form-control {
     height: auto;
     width: 97.777%;
