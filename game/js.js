@@ -190,7 +190,7 @@ $(document).ready(function(){
         //euro | green coin | best
         if(nowyDiv.className=='obiekt2'){
           nowyDiv.remove(nowyDiv);
-          score+=4;
+          score+=2;
         yeahCoin();
       }
 
