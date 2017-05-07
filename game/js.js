@@ -2,10 +2,75 @@
 //load script when the rest of document is ready
 $(document).ready(function(){
 
+  function yeahCoin(){
+        var audio = document.createElement("audio");
+        audio.src = "CoinSound.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    function invalid(){
+        var audio = document.createElement("audio");
+        audio.src = "invalid.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    function end(){
+        var audio = document.createElement("audio");
+        audio.src = "End.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    function soundStart(){
+        var audio = document.createElement("audio");
+        audio.src = "soundStart.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    function pressStart(){
+        var audio = document.createElement("audio");
+        audio.src = "pressStart.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    function hurryUp(){
+        var audio = document.createElement("audio");
+        audio.src = "hurryUp.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    // function yippee(){
+    //     var audio = document.createElement("audio");
+    //     audio.src = "yippee.wav";
+    //     audio.addEventListener("ended", function () {
+    //         document.removeChild(this);
+    //     }, false);
+    //     audio.play();   
+    // }
+
+    pressStart();
+
   //start the Game when click on Play button is performed
   $('#startGry').click(function(event){
 
-
+    soundStart();
     $('#scoreLabel').css('font-size',"40vh")  //show score to original size
     $('#container').hide('slow');              //hide menu
     $('#timer').show('slow');                  //show timer
@@ -31,6 +96,7 @@ $(document).ready(function(){
     //main function for countdown Timer
     function countDown(){
       var out = gameplayTime;     //---------------       // out current decreaset time | gameplayTime fixed time
+      if(gameplayTime==10){hurryUp();};
       if(gameplayTime<10) out = '0' + gameplayTime;         // if timer goes below 10 seconds set zero before 9 | 09 instead of 9
       $("#timer").html(out);      //---------------       // give id 'timer' current time to display
       if( gameplayTime <= 0){      
@@ -46,7 +112,7 @@ $(document).ready(function(){
         $('[class^="obiekt"]').remove();                    //remove all objects with class starting with 'obiekt'
         $('#timer').hide('slow');                           //hide timer
         $('#scoreLabel').css("font-size", "20vh");         //resize score and show it above menu 
-        
+        end();
    
 
         return;
@@ -56,6 +122,7 @@ $(document).ready(function(){
 
     // main Function for generating objects and its behavior
     function start(){
+
 
     // increase falling speed according to score
 
@@ -110,23 +177,28 @@ $(document).ready(function(){
           nowyDiv.remove(nowyDiv);
           gameplayTime-=2; //steal 2 seconds from timer
           score-=5;
+          invalid();
         }
 
         //pound | orange coin | good
         if(nowyDiv.className=='obiekt1'){
           nowyDiv.remove(nowyDiv);
           score+=1;
+          yeahCoin();
         }
 
         //euro | green coin | best
         if(nowyDiv.className=='obiekt2'){
           nowyDiv.remove(nowyDiv);
-          score+=2;}
+          score+=2;
+        yeahCoin();
+      }
 
 
         // localStorage.getItem('maxscore');
         if (score>localStorage.getItem('maxscore')){
           localStorage.setItem('maxscore',score);
+          // yippee();
           $('#topscore').html(score);
         } 
         else {

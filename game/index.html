@@ -9,7 +9,7 @@
 <body>
 	<div id="container">			
 		<button id="startGry" class="submita">Zagraj</button>
-		<button onclick="location.href='../index.html'" class="submita">Wróc na stronę główną</button>
+		<button id='goback' onclick='goBack()' class="submita">Wróc na stronę główną</button>
 		<img id='instru' style='display: none;' src='images/tlo.png'/>
 		<button class="submita" id='clicker'>Instrukcja</button>			
 	</div>
@@ -25,6 +25,11 @@
 		});
 
 		// $('#topscore').click(localStorage.clear('maxscore'));
+
+		function goBack(){
+			window.history.back();
+		}
+		<!-- "location.href='../index.html'" -->
 	</script>
 </body>
 </html>
