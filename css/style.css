@@ -83,6 +83,9 @@ body {
     color: #FFFFFF;
     border-bottom: 1px #FFFFFF solid;
 }
+.navbar.default .navbar-nav > li > a:link {
+    color: #FFFFFF;
+}
 
 /**********************************************************
 --------------------------SLIDE SHOW
@@ -875,8 +878,8 @@ footer{
 
 
 
-.color-change-4x {
+/*.color-change-4x {
     -webkit-animation: color-change-4x 6s linear infinite alternate both;
     -moz-animation: color-change-4x 6s linear infinite alternate both;
     animation: color-change-4x 6s linear infinite alternate both;
-}
+}*/

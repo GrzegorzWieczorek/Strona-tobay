@@ -2,11 +2,13 @@
 //load script when the rest of document is ready
 $(document).ready(function(){
 
+//all founctions for game sound
   function yeahCoin(){
         var audio = document.createElement("audio");
-        audio.src = "CoinSound.wav";
+        audio.src = "coinSound.wav";
         audio.addEventListener("ended", function () {
-            document.removeChild(this);
+            // document.removeChild(this);
+            $(this).remove();
         }, false);
         audio.play();   
     }
@@ -15,16 +17,18 @@ $(document).ready(function(){
         var audio = document.createElement("audio");
         audio.src = "invalid.wav";
         audio.addEventListener("ended", function () {
-            document.removeChild(this);
+            // document.removeChild(this);
+            $(this).remove();
         }, false);
         audio.play();   
     }
 
     function end(){
         var audio = document.createElement("audio");
-        audio.src = "End.wav";
+        audio.src = "end.wav";
         audio.addEventListener("ended", function () {
-            document.removeChild(this);
+            // document.removeChild(this);
+            $(this).remove();
         }, false);
         audio.play();   
     }
@@ -33,7 +37,8 @@ $(document).ready(function(){
         var audio = document.createElement("audio");
         audio.src = "soundStart.wav";
         audio.addEventListener("ended", function () {
-            document.removeChild(this);
+            // document.removeChild(this);
+            $(this).remove();
         }, false);
         audio.play();   
     }
@@ -42,7 +47,8 @@ $(document).ready(function(){
         var audio = document.createElement("audio");
         audio.src = "pressStart.wav";
         audio.addEventListener("ended", function () {
-            document.removeChild(this);
+            // document.removeChild(this);
+            $(this).remove();
         }, false);
         audio.play();   
     }
@@ -51,7 +57,8 @@ $(document).ready(function(){
         var audio = document.createElement("audio");
         audio.src = "hurryUp.wav";
         audio.addEventListener("ended", function () {
-            document.removeChild(this);
+            // document.removeChild(this);
+            $(this).remove();
         }, false);
         audio.play();   
     }
@@ -65,16 +72,18 @@ $(document).ready(function(){
     //     audio.play();   
     // }
 
+    //play sound
     pressStart();
 
   //start the Game when click on Play button is performed
   $('#startGry').click(function(event){
 
+    //play sound
     soundStart();
-    $('#scoreLabel').css('font-size',"40vh")  //show score to original size
+    $('#scoreLabel').css('font-size',"30vh")  //show score to original size
     $('#container').hide('slow');              //hide menu
     $('#timer').show('slow');                  //show timer
-    $('#topscore').html(localStorage.getItem('maxscore'));
+    $('#topscore').html(localStorage.getItem('maxscore')); //set maxscore to topscore div
 
     event.preventDefault();  //prevent default for event
     
@@ -112,11 +121,9 @@ $(document).ready(function(){
         $('[class^="obiekt"]').remove();                    //remove all objects with class starting with 'obiekt'
         $('#timer').hide('slow');                           //hide timer
         $('#scoreLabel').css("font-size", "20vh");         //resize score and show it above menu 
-        end();
+        end();  //play sound
    
-
-        return;
-        }
+           }
         --gameplayTime;   //decrease timer by 1 after 1 second
         };
 
@@ -158,6 +165,7 @@ $(document).ready(function(){
       // we give random class obiekt[0-2] to our empty object
       nowyDiv.className = 'obiekt'+losoweCoiny;
 
+      // set id obiekt for all divs
       nowyDiv.id = 'obiekt';
 
       // attaching new personalized div to body
@@ -177,32 +185,32 @@ $(document).ready(function(){
           nowyDiv.remove(nowyDiv);
           gameplayTime-=2; //steal 2 seconds from timer
           score-=5;
-          invalid();
+          invalid(); //play sound
         }
 
         //pound | orange coin | good
         if(nowyDiv.className=='obiekt1'){
           nowyDiv.remove(nowyDiv);
           score+=1;
-          yeahCoin();
+          yeahCoin(); //play sound
         }
 
         //euro | green coin | best
         if(nowyDiv.className=='obiekt2'){
           nowyDiv.remove(nowyDiv);
           score+=2;
-        yeahCoin();
+        yeahCoin(); //play sound
       }
 
 
         // localStorage.getItem('maxscore');
         if (score>localStorage.getItem('maxscore')){
-          localStorage.setItem('maxscore',score);
+          localStorage.setItem('maxscore',score); //if current score > maxscore, set new maxscore to localStorage
           // yippee();
-          $('#topscore').html(score);
+          $('#topscore').html(score); //append new topscore to topscore div
         } 
         else {
-          $('#topscore').html(localStorage.getItem('maxscore'));
+          $('#topscore').html(localStorage.getItem('maxscore')); //if score < maxscore show old maxscore in topscore div
         }
 
       }); //removeCoin end

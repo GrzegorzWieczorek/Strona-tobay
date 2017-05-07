@@ -47,11 +47,12 @@ else {
 }
 */
 $(document).ready(function () {
+    var headerHeight = $('.slide-section').outerHeight();
     $('.slide-section').click(function(e) {
         var linkHref = $(this).attr('href');
 
         $('html, body').animate({
-            scrollTop: $(linkHref).offset().top
+            scrollTop: $(linkHref).offset().top - headerHeight
         }, 1000);
         e.preventDefault();
     });
