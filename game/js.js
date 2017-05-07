@@ -2,10 +2,57 @@
 //load script when the rest of document is ready
 $(document).ready(function(){
 
+  function yeahCoin(){
+        var audio = document.createElement("audio");
+        audio.src = "CoinSound.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    function invalid(){
+        var audio = document.createElement("audio");
+        audio.src = "invalid.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    function end(){
+        var audio = document.createElement("audio");
+        audio.src = "End.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    function soundStart(){
+        var audio = document.createElement("audio");
+        audio.src = "soundStart.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    function pressStart(){
+        var audio = document.createElement("audio");
+        audio.src = "pressStart.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    pressStart();
+
   //start the Game when click on Play button is performed
   $('#startGry').click(function(event){
 
-
+    soundStart();
     $('#scoreLabel').css('font-size',"40vh")  //show score to original size
     $('#container').hide('slow');              //hide menu
     $('#timer').show('slow');                  //show timer
@@ -46,7 +93,7 @@ $(document).ready(function(){
         $('[class^="obiekt"]').remove();                    //remove all objects with class starting with 'obiekt'
         $('#timer').hide('slow');                           //hide timer
         $('#scoreLabel').css("font-size", "20vh");         //resize score and show it above menu 
-        
+        end();
    
 
         return;
@@ -56,6 +103,7 @@ $(document).ready(function(){
 
     // main Function for generating objects and its behavior
     function start(){
+
 
     // increase falling speed according to score
 
@@ -110,18 +158,22 @@ $(document).ready(function(){
           nowyDiv.remove(nowyDiv);
           gameplayTime-=2; //steal 2 seconds from timer
           score-=5;
+          invalid();
         }
 
         //pound | orange coin | good
         if(nowyDiv.className=='obiekt1'){
           nowyDiv.remove(nowyDiv);
           score+=1;
+          yeahCoin();
         }
 
         //euro | green coin | best
         if(nowyDiv.className=='obiekt2'){
           nowyDiv.remove(nowyDiv);
-          score+=2;}
+          score+=2;
+        yeahCoin();
+      }
 
 
         // localStorage.getItem('maxscore');
