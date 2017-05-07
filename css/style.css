@@ -83,6 +83,9 @@ body {
     color: #FFFFFF;
     border-bottom: 1px #FFFFFF solid;
 }
+.navbar.default .navbar-nav > li > a:link {
+    color: #FFFFFF;
+}
 
 /**********************************************************
 --------------------------SLIDE SHOW
