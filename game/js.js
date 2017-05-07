@@ -47,6 +47,24 @@ $(document).ready(function(){
         audio.play();   
     }
 
+    function hurryUp(){
+        var audio = document.createElement("audio");
+        audio.src = "hurryUp.wav";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+
+    // function yippee(){
+    //     var audio = document.createElement("audio");
+    //     audio.src = "yippee.wav";
+    //     audio.addEventListener("ended", function () {
+    //         document.removeChild(this);
+    //     }, false);
+    //     audio.play();   
+    // }
+
     pressStart();
 
   //start the Game when click on Play button is performed
@@ -78,6 +96,7 @@ $(document).ready(function(){
     //main function for countdown Timer
     function countDown(){
       var out = gameplayTime;     //---------------       // out current decreaset time | gameplayTime fixed time
+      if(gameplayTime==10){hurryUp();};
       if(gameplayTime<10) out = '0' + gameplayTime;         // if timer goes below 10 seconds set zero before 9 | 09 instead of 9
       $("#timer").html(out);      //---------------       // give id 'timer' current time to display
       if( gameplayTime <= 0){      
@@ -171,7 +190,7 @@ $(document).ready(function(){
         //euro | green coin | best
         if(nowyDiv.className=='obiekt2'){
           nowyDiv.remove(nowyDiv);
-          score+=2;
+          score+=4;
         yeahCoin();
       }
 
@@ -179,6 +198,7 @@ $(document).ready(function(){
         // localStorage.getItem('maxscore');
         if (score>localStorage.getItem('maxscore')){
           localStorage.setItem('maxscore',score);
+          // yippee();
           $('#topscore').html(score);
         } 
         else {
