@@ -346,7 +346,12 @@ section.functions-intro .container-fluid {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-
+.regul{
+    color:#fff;
+    padding: 1%;
+    font-size: 1.2em;
+    font-weight: 400;
+}
 /**********************************************************
 ----------------------FUNCTIONS
  **********************************************************/
